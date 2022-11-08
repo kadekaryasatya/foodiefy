@@ -1,7 +1,9 @@
+import Pages from "./pages/Pages";
+
 function App() {
   return (
     <div className="app">
-      <h1>Hello this is Foodify</h1>
+      <Pages />
     </div>
   );
 }
