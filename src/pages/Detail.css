@@ -8,7 +8,7 @@
 }
 
 .recipe-detail__image {
-  display: block;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   height: 300px;
