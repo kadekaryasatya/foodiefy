@@ -27,13 +27,13 @@ function Detail() {
               <h2>Instructions</h2>
             </div>
             <div className='instructions__body'>
-              <ul>
+              <ol>
                 <li>Thickly slice chillies, shallots, garlic, ginger and lemon grass. Grind to a fine paste in electric blender/food processor with just enough water for blades to work. Stir in the ground turmeric.</li>
                 <li>Heat oil in a roomy wok and add ground ingredients. Cook over low heat until liquid is reduced and oil begins to separate. Pour in the coconut milk and continue cooking over medium heat until mixture is thick.</li>
                 <li>Thickly slice chillies, shallots, garlic, ginger and lemon grass. Grind to a fine paste in electric blender/food processor with just enough water for blades to work. Stir in the ground turmeric.</li>
                 <li>Thickly slice chillies, shallots, garlic, ginger and lemon grass. Grind to a fine paste in electric blender/food processor with just enough water for blades to work. Stir in the ground turmeric.</li>
                 <li>Thickly slice chillies, shallots, garlic, ginger and lemon grass. Grind to a fine paste in electric blender/food processor with just enough water for blades to work. Stir in the ground turmeric.</li>
-              </ul>
+              </ol>
             </div>
           </div>
 
