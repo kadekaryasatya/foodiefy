@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <p>2022 &copy; Foodify Team</p>
+    <div className='footer'>
+      <p>2022 &copy; Foodiefy Team</p>
     </div>
   );
 };
