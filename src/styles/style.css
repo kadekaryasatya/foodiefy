@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Poppins&display=swap');
 
+:root {
+  --background: #ffffff;
+  --background-grey: #413f42;
+  --text-hover: #81c6e8;
+  --date-color: #aaa;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,7 +15,7 @@
 
 body,
 html {
-  background-color: #ffffff;
+  background-color: var(--background);
   margin: 0;
   padding: 0;
 }
