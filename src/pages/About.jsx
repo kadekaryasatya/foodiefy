@@ -8,6 +8,7 @@ function About() {
       <div className='about__title'>
         <h1>About</h1>
       </div>
+
       <div className='about__description'>
         <p>
           <b>Foodiefy</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, sequi? Ut minima atque, odio eveniet beatae inventore minus. Quos tempora dolore totam facilis aperiam laboriosam quis sed! Cumque, nostrum pariatur!
