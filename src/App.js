@@ -8,6 +8,7 @@ import RegisterPage from './pages/RegisterPage';
 import LoginPage from './pages/LoginPage';
 import About from './pages/About';
 import MyRecipes from './pages/MyRecipes';
+import Navbar from './components/layout/Navbar';
 
 class App extends React.Component {
   constructor(props) {
@@ -18,6 +19,17 @@ class App extends React.Component {
       initializing: true,
     };
     this.onLoginSuccess = this.onLoginSuccess.bind(this);
+    this.onLogout = this.onLogout.bind(this);
+  }
+
+  async componentDidMount() {
+    const { data } = await getUserLogged();
+    this.setState(() => {
+      return {
+        authedUser: data,
+        initializing: false,
+      };
+    });
   }
 
   async onLoginSuccess({ accessToken }) {
@@ -31,27 +43,43 @@ class App extends React.Component {
     });
   }
 
+  onLogout() {
+    this.setState(() => {
+      return {
+        authedUser: null,
+      };
+    });
+    putAccessToken('');
+  }
+
   render() {
     if (this.state.initializing) {
       return null;
     }
     if (this.state.authedUser === null) {
       return (
-        <Routes>
-          <Route path='/*' element={<LoginPage loginSuccess={this.onLoginSuccess} />} />
-          <Route path='/home' element={<HomePage />} />
-          <Route path='/register' element={<RegisterPage />} />
-          <Route path='/about' element={<About />} />
-        </Routes>
+        <div>
+          <Navbar />
+          <Routes>
+            <Route path='/*' element={<LoginPage loginSuccess={this.onLoginSuccess} />} />
+            <Route path='/home' element={<HomePage />} />
+            <Route path='/register' element={<RegisterPage />} />
+            <Route path='/about' element={<About />} />
+          </Routes>
+        </div>
       );
     }
 
     return (
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/myrecipes' element={<MyRecipes />} />
-        <Route path='/add' element={<AddPage />} />
-      </Routes>
+      <div>
+        <Navbar logout={this.onLogout} name={this.state.authedUser.name} />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/myrecipes' element={<MyRecipes />} />
+          <Route path='/add' element={<AddPage />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+      </div>
     );
   }
 }
