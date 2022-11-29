@@ -1,0 +1,41 @@
+.login-page {
+  margin-top: 4rem;
+}
+
+.login-input {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.login-input input {
+  display: block;
+  padding: 16px;
+  width: 100%;
+  margin: 8px 0;
+  font-size: 20px;
+  background-color: transparent;
+  border: 2px dashed var(--text-color);
+  border-radius: 10px;
+}
+
+.login-input button {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 8px;
+  background-color: transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  color: var(--text-color);
+  border: 1px solid var(--date-color);
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-input button:hover {
+  background-color: var(--text-color);
+  color: var(--background);
+}
