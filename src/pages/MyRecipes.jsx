@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react';
 import RecipeList from '../components/myRecipes/RecipeList';
 // import SearchBar from "../components/layout/SearchBar";
-// import { useSearchParams } from "react-router-dom";
+import { useSearchParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 // import { MdOutlineAddCircle } from 'react-icons/md';
 import { getActiveNotes, deleteNote, archiveNote } from '../utils/api';
@@ -9,8 +9,11 @@ import { getActiveNotes, deleteNote, archiveNote } from '../utils/api';
 // import { PacmanLoader } from 'react-spinners';
 
 function MyRecipes() {
-  // const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [notes, setNotes] = useState([]);
+  const [keyword, setKeyword] = useState(() => {
+    return searchParams.get('keyword') || '';
+  });
   // const [keyword, setKeyword] = useState(() => {
   //   return searchParams.get('keyword') || '';
   // });
@@ -43,14 +46,14 @@ function MyRecipes() {
   //   setNotes(data);
   // }
 
-  // function onKeywordChangeHandler(keyword) {
-  //   setKeyword(keyword);
-  //   setSearchParams({ keyword });
-  // }
+  function onKeywordChangeHandler(keyword) {
+    setKeyword(keyword);
+    setSearchParams({ keyword });
+  }
 
-  // const filteredNotes = notes.filter((note) => {
-  //   return note.title.toLowerCase().includes(keyword.toLowerCase());
-  // });
+  const filteredRecipes = notes.filter((recipe) => {
+    return recipe.title.toLowerCase().includes(keyword.toLowerCase());
+  });
 
   return (
     <section>
@@ -58,7 +61,7 @@ function MyRecipes() {
         <h2>
           <u>My Recipes</u>
         </h2>
-        {notes.length !== 0 ? <RecipeList /> : <h5 className=''>No Recipes Here....</h5>}
+        {notes.length !== 0 ? <RecipeList notes={filteredRecipes} /> : <h5 className=''>No Recipes Here....</h5>}
       </div>
     </section>
   );
