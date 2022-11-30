@@ -5,22 +5,30 @@ import './About.css';
 function About() {
   return (
     <div className='about'>
+      {/* <img className='about__image' src='../detail.png' alt='recipe' /> */}
       <div className='about__title'>
-        <h1>About</h1>
+        <h4>About Foodiefy</h4>
+        <h1>" The Best Platform To Control Your Favorite Recipes "</h1>
       </div>
 
-      <div className='about__description'>
-        <p>
-          <b>Foodiefy</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, sequi? Ut minima atque, odio eveniet beatae inventore minus. Quos tempora dolore totam facilis aperiam laboriosam quis sed! Cumque, nostrum pariatur!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, consequatur rem consectetur quisquam ipsum dignissimos exercitationem quidem autem doloribus temporibus corporis, non cumque quo iste incidunt at fugit nobis
-          eaque!
-        </p>
+      <div className='about__foodiefy'>
+        <h4>Our Features</h4>
+        <div className='about__foodiefy1'>
+          <h2>Search</h2>
+          <h3></h3>
+        </div>
+        <div className='about__foodiefy2'>
+          <h2>Explore</h2>
+          <h3></h3>
+        </div>
+        <div className='about__foodiefy3'>
+          <h2>Create</h2>
+          <h3></h3>
+        </div>
       </div>
 
       <div className='our-team'>
-        <div className='our-team__title'>
-          <h2>Our team</h2>
-        </div>
+        <h4>Our team</h4>
         <div className='our-team__body'>
           <div className='dek-arya'>
             <h3>Dek Arya</h3>
