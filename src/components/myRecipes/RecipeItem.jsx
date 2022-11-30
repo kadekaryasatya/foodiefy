@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import RecipeItemTitle from './RecipeItemTitle';
-import RecipeItemBody from './RecipeItemBody';
+// import RecipeItemBody from './RecipeItemBody';
 import RecipeItemDate from './RecipeItemDate';
 
 function RecipeItem({ id, title, body, createdAt }) {
   return (
     <div className='recipe-item'>
       <div className='recipe-item__content'>
-        <img className='recipe-item__image' src='favicon.png' alt='recipe image' />
+        <img className='recipe-item__image' src='favicon.png' alt='recipe' />
         <RecipeItemTitle key={id} id={id} title={title} />
         <RecipeItemDate date={createdAt} />
         {/* <RecipeItemBody body={body} /> */}

@@ -19,7 +19,7 @@ function AddPage() {
      */
     addNote({ title, body }).then((res) => {
       if (!res.error) {
-        navigate('/');
+        navigate('/myrecipes');
       }
     });
   };

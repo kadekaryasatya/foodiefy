@@ -4,7 +4,7 @@ import RecipeItem from './RecipeItem';
 
 function RecipeList({ notes }) {
   return (
-    <section className='note-list'>
+    <section className='recipe-list'>
       {notes.map((recipe) => (
         <RecipeItem key={recipe.id} id={recipe.id} {...recipe} />
       ))}

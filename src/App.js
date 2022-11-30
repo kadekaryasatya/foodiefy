@@ -9,6 +9,8 @@ import LoginPage from './pages/LoginPage';
 import About from './pages/About';
 import MyRecipes from './pages/MyRecipes';
 import Navbar from './components/layout/Navbar';
+import NotFound from './pages/NotFound';
+import MyRecipesDetail from './pages/MyRecipesDetail';
 
 class App extends React.Component {
   constructor(props) {
@@ -62,7 +64,7 @@ class App extends React.Component {
           <Navbar />
           <Routes>
             <Route path='/*' element={<LoginPage loginSuccess={this.onLoginSuccess} />} />
-            <Route path='/home' element={<HomePage />} />
+            <Route path='/' element={<HomePage />} />
             <Route path='/register' element={<RegisterPage />} />
             <Route path='/about' element={<About />} />
           </Routes>
@@ -78,6 +80,8 @@ class App extends React.Component {
           <Route path='/myrecipes' element={<MyRecipes />} />
           <Route path='/add' element={<AddPage />} />
           <Route path='/about' element={<About />} />
+          <Route path='/notes/:id' element={<MyRecipesDetail />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
     );

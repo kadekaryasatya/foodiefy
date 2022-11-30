@@ -5,6 +5,7 @@ import { useSearchParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 // import { MdOutlineAddCircle } from 'react-icons/md';
 import { getActiveNotes, deleteNote, archiveNote } from '../utils/api';
+import SearchBar from '../components/layout/SearchBar';
 // import LocaleContext from '../contexts/LocaleContext';
 // import { PacmanLoader } from 'react-spinners';
 
@@ -14,9 +15,7 @@ function MyRecipes() {
   const [keyword, setKeyword] = useState(() => {
     return searchParams.get('keyword') || '';
   });
-  // const [keyword, setKeyword] = useState(() => {
-  //   return searchParams.get('keyword') || '';
-  // });
+
   // const { locale } = useContext(LocaleContext);
   // const [loading, setLoading] = useState(false);
 
@@ -58,9 +57,12 @@ function MyRecipes() {
   return (
     <section>
       <div id='active-recipes'>
-        <h2>
-          <u>My Recipes</u>
-        </h2>
+        <div className='active-recipes__header'>
+          <h2>
+            <u>My Recipes</u>
+          </h2>
+          <SearchBar keyword={keyword} keywordChange={onKeywordChangeHandler} />
+        </div>
         {notes.length !== 0 ? <RecipeList notes={filteredRecipes} /> : <h5 className=''>No Recipes Here....</h5>}
       </div>
     </section>

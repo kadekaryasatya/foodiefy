@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
+import './Navbar.css';
+
 const Navbar = ({ name, logout }) => {
   // const { pathname } = useLocation();
 
   return (
-    <div className='Navbar'>
+    <div className='navbar'>
       <ul>
         <li>
           <Link to='/' className='home-nav' title='home'>
@@ -22,7 +24,6 @@ const Navbar = ({ name, logout }) => {
             <u>About Us</u>
           </Link>
         </li>
-
         <li>
           <Link to='/' className='logout' onClick={logout} title='logout'>
             <u>{name}</u>
