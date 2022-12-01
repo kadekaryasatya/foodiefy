@@ -3,13 +3,12 @@ import PropTypes from 'prop-types';
 import RecipeItemTitle from './RecipeItemTitle';
 // import RecipeItemBody from './RecipeItemBody';te
 import RecipeItemDate from './RecipeItemDate';
-sa;
 
 function RecipeItem({ id, title, body, createdAt }) {
   return (
     <div className='recipe-item'>
+      <img className='recipe-item__image' src='favicon.png' alt='recipe' />
       <div className='recipe-item__content'>
-        <img className='recipe-item__image' src='favicon.png' alt='recipe' />
         <RecipeItemTitle key={id} id={id} title={title} />
         <RecipeItemDate date={createdAt} />
         {/* <RecipeItemBody body={body} /> */}

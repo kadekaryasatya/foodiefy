@@ -8,6 +8,8 @@ import { getActiveNotes, deleteNote, archiveNote } from '../utils/api';
 import SearchBar from '../components/layout/SearchBar';
 // import LocaleContext from '../contexts/LocaleContext';
 // import { PacmanLoader } from 'react-spinners';
+import HeroRecipes from '../components/myRecipes/HeroRecipes';
+import ColorBlur from '../components/colorBlur/ColorBlur';
 
 import './MyRecipes.css';
 
@@ -58,13 +60,15 @@ function MyRecipes() {
 
   return (
     <section>
+      <ColorBlur />
+
       <div className='active-recipes'>
-        <div className='active-recipes__header'>
-          <h2>
-            <u>My Recipes</u>
-          </h2>
-          <SearchBar keyword={keyword} keywordChange={onKeywordChangeHandler} />
+        <div className='active-recipes__title'>
+          <h3>My recipes</h3>
         </div>
+        {/* <div className='active-recipes__header'>
+          <SearchBar keyword={keyword} keywordChange={onKeywordChangeHandler} />
+        </div> */}
         {notes.length !== 0 ? <RecipeList notes={filteredRecipes} /> : <h5 className=''>No Recipes Here....</h5>}
       </div>
     </section>

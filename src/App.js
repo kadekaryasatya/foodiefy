@@ -60,12 +60,15 @@ class App extends React.Component {
     }
     if (this.state.authedUser === null) {
       return (
-        <div className='contact-app'>
-          <Navbar></Navbar>
+        <div>
+          <Navbar />
           <main>
             <Routes>
-              <Route path='/*' element={<HomePage />} />
+              <Route path='/*' element={<LoginPage loginSuccess={this.onLoginSuccess} />} />
+              <Route path='/' element={<HomePage />} />
               <Route path='/register' element={<p>Halaman Register</p>} />
+              <Route path='*' element={<NotFound />} />
+              <Route path='/about' element={<About />} />
             </Routes>
           </main>
         </div>
@@ -74,6 +77,7 @@ class App extends React.Component {
 
     return (
       <div>
+        <Navbar />
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/myrecipes' element={<MyRecipes />} />
