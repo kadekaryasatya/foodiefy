@@ -8,7 +8,7 @@ import RegisterPage from './pages/RegisterPage';
 import LoginPage from './pages/LoginPage';
 import About from './pages/About';
 import MyRecipes from './pages/MyRecipes';
-import Navbar from './components/layout/Navbar';
+import Navbar from './components/layout/Navbar1';
 import NotFound from './pages/NotFound';
 import MyRecipesDetail from './pages/MyRecipesDetail';
 
@@ -61,7 +61,6 @@ class App extends React.Component {
     if (this.state.authedUser === null) {
       return (
         <div>
-          <Navbar />
           <Routes>
             <Route path='/*' element={<LoginPage loginSuccess={this.onLoginSuccess} />} />
             <Route path='/' element={<HomePage />} />
@@ -74,7 +73,6 @@ class App extends React.Component {
 
     return (
       <div>
-        <Navbar logout={this.onLogout} name={this.state.authedUser.name} />
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/myrecipes' element={<MyRecipes />} />
