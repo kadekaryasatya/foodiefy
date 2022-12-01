@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import HomePage from './pages/HomePage';
 import AddPage from './pages/AddPage';
+import Navbar from './components/layout/Navbar'
 
 class App extends React.Component {
   constructor(props) {
@@ -16,12 +17,11 @@ class App extends React.Component {
     if (this.state.authedUser === null) {
       return (
         <div className='contact-app'>
-          <header className='contact-app__header'>
-            <h1>Aplikasi Kontak</h1>
-          </header>
+          <Navbar>
+          </Navbar>
           <main>
             <Routes>
-              <Route path='/*' element={<p>Halaman Login</p>} />
+              <Route path='/*' element={<HomePage/>} />
               <Route path='/register' element={<p>Halaman Register</p>} />
             </Routes>
           </main>

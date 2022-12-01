@@ -1,14 +1,35 @@
-/*
- * footer
- */
 .footer {
-  color: rgb(170, 166, 166);
+  color: #1B1C57;
   width: 100%;
-  position: absolute;
-  border-top: 1px solid;
-  margin-top: 50px;
-  padding: 30px;
-  text-align: center;
-  background-color: #f2d1d1;
-  font-size: 15px;
+  margin: 3rem auto;
+  background-color: transparent;
 }
+
+.footer h3{
+    font-size: 24px;  
+    font-weight: bold;
+    color: #1B1C57;
+}
+
+.footer .icon-list{
+  font-size: 1.75rem;
+}
+.footer .icon-list svg{
+  margin: 0 0.5rem;
+}
+
+.footer h4{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer .footer-link ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .footer-link ul li{
+  margin: 0.75rem 0;
+}
+

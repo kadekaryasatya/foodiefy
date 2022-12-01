@@ -1,0 +1,44 @@
+.subscribe-section{
+    background: rgba(16, 185, 129, 0.2);
+    border-radius: 32px;
+}
+.subscribe-section h2{
+    font-weight: 600;
+    font-size: 32px;
+    color: #1B1C57;
+}
+.subscribe-section .icon-loc{
+    position: absolute;
+    z-index: 6;
+    font-size: 18px;
+    left: 25px;
+    color: #F59E0B;
+    top: 4px;
+}
+
+.subscribe-section .input-group input{
+    font-weight: 500;
+    font-size: 14px;
+    border: 1px solid #E0E3EB;
+    border-radius: 32px !important;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    margin: 0 -1rem 0 0;
+}
+.subscribe-section .form-control:focus{
+    outline: 0;
+    box-shadow:none;
+}
+
+
+.subscribe-section .input-group button{
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 32px;
+    background: #10B981;
+    color:#E0E3EB;
+    z-index: 5;
+    padding: 0.5rem 0.75rem;
+}
+.subscribe-section .input-group-append{
+    margin-left: -15px !important;
+}
