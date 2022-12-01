@@ -8,7 +8,7 @@ function About() {
       {/* <img className='about__image' src='../detail.png' alt='recipe' /> */}
       <div className='about__title'>
         <h4>About Foodiefy</h4>
-        <h1>" The Best Platform To Control Your Favorite Recipes "</h1>
+        <h1>" The Best Platform To Manage Your Favorite Recipes "</h1>
       </div>
 
       <div className='about__features'>
@@ -31,7 +31,9 @@ function About() {
 
       <div className='cooking'>
         <img className='cooking__image' src='../cooking.jpg' alt='recipe' />
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam corporis, ab placeat, eius aspernatur dolorem, non minus atque numquam at corrupti perspiciatis molestiae doloremque voluptatibus a cumque suscipit quo et?</h4>
+        <h4>
+          <span>Our Mission</span> is helps users to manage and search for recipes from around the world
+        </h4>
       </div>
 
       <div className='our-team'>

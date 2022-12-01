@@ -2,19 +2,12 @@
   justify-content: center;
 }
 
-.about__image {
-  align-items: center;
-  width: 100%;
-  max-width: 100px;
-  height: auto;
-}
-
 /*
  * about header
  */
 .about__title {
+  margin-top: 50px;
   padding: 30px;
-  margin-bottom: 50px;
 }
 .about__title h4 {
   text-align: center;
@@ -37,7 +30,6 @@
 .about__features {
   text-align: center;
   justify-content: center;
-  background-color: #f9f9f9;
   padding: 30px;
 }
 
@@ -78,6 +70,18 @@
  */
 .cooking {
   padding: 30px;
+}
+
+.cooking span {
+  font-size: large;
+  font-weight: bold;
+}
+.cooking h4 {
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 400px;
+  font-weight: 500;
 }
 
 .cooking__image {
@@ -149,6 +153,15 @@
   margin-bottom: 20px;
 }
 
+.about__image {
+  align-items: center;
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid;
+}
+
 /*
  * responsive
  */
@@ -175,6 +188,19 @@
     max-width: 900px;
   }
 
+  .cooking {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    display: flex;
+    gap: 50px;
+  }
+
+  .cooking__image {
+    max-width: 600px;
+  }
+
   .our-team__body {
     margin: 0 auto;
     max-width: 1000px;
@@ -187,8 +213,13 @@
 @media screen and (min-width: 1200px) {
   .about__title {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 800px;
   }
+
+  .about__title h1 {
+    font-size: 48px;
+  }
+
   .about__foodiefy {
     margin: 0 auto;
     max-width: 900px;
