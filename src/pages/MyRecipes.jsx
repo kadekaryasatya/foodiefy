@@ -9,6 +9,8 @@ import SearchBar from '../components/layout/SearchBar';
 // import LocaleContext from '../contexts/LocaleContext';
 // import { PacmanLoader } from 'react-spinners';
 
+import './MyRecipes.css';
+
 function MyRecipes() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [notes, setNotes] = useState([]);
@@ -56,7 +58,7 @@ function MyRecipes() {
 
   return (
     <section>
-      <div id='active-recipes'>
+      <div className='active-recipes'>
         <div className='active-recipes__header'>
           <h2>
             <u>My Recipes</u>
