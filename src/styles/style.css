@@ -5,6 +5,7 @@
   --background-grey: #413f42;
   --text-hover: #81c6e8;
   --date-color: #aaa;
+  --text-color: #000000;
 }
 
 * {
@@ -45,7 +46,6 @@ body {
 }
 
 .popular__label {
-  font-size: 40px;
   text-align: center;
   font-weight: 500;
   padding: 20px;
@@ -63,6 +63,7 @@ body {
   width: 100%;
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .popular-item__content {
@@ -77,7 +78,6 @@ body {
 
 .popular-item__title {
   color: white;
-  font-size: 18px;
   font-weight: 500;
 }
 

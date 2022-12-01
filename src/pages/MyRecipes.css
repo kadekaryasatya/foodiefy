@@ -1,0 +1,12 @@
+.active-recipes {
+  padding: 30px;
+}
+
+.active-recipes__header {
+  text-align: center;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 100%;
+}

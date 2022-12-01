@@ -1,29 +1,235 @@
 .about {
+  justify-content: center;
+}
+
+/*
+ * about header
+ */
+.about__title {
+  margin-top: 50px;
+  padding: 30px;
+}
+.about__title h4 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--date-color);
+  font-weight: 100;
+}
+
+.about__title h1 {
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: capitalize;
+}
+
+/*
+ * about features
+ */
+
+.about__features {
+  text-align: center;
+  justify-content: center;
   padding: 30px;
 }
 
-.about__title {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.about__description {
-  padding: 20px;
-  background-color: #dafff3;
+.about__features h4 {
   margin-bottom: 20px;
-  text-align: justify;
-  border-radius: 30px;
+  font-weight: 500;
 }
 
-.our-team__title {
+.about__foodiefy1 {
+  background-color: var(--background);
+  align-items: center;
+  padding: 30px 20px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.about__foodiefy2 {
+  background-color: var(--background);
+  align-items: center;
+  padding: 30px 20px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.about__foodiefy3 {
+  background-color: var(--background);
+  align-items: center;
+  padding: 30px 20px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/*
+ * cooking
+ */
+.cooking {
+  padding: 30px;
+}
+
+.cooking span {
+  font-size: large;
+  font-weight: bold;
+}
+.cooking h4 {
+  justify-content: center;
   text-align: center;
-  margin-bottom: 10px;
+  margin: 0 auto;
+  max-width: 400px;
+  font-weight: 500;
+}
+
+.cooking__image {
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+/*
+ * about our-team
+ */
+.our-team {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.our-team h4 {
+  text-align: center;
+  font-weight: 500;
 }
 
 .our-team__body {
-  display: flex;
+  display: grid;
+  grid-column: 2;
   padding: 20px;
-  gap: 10px;
   align-items: center;
   justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.dek-arya {
+  background-color: var(--background);
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.zulham {
+  background-color: var(--background);
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.dede-oka {
+  background-color: var(--background);
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.tri {
+  background-color: var(--background);
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.about__image {
+  align-items: center;
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid;
+}
+
+/*
+ * responsive
+ */
+
+@media screen and (min-width: 600px) {
+  .about__title {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  .about__foodiefy {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about__title {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  .about__foodiefy {
+    margin: 0 auto;
+    max-width: 900px;
+  }
+
+  .cooking {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    display: flex;
+    gap: 50px;
+  }
+
+  .cooking__image {
+    max-width: 600px;
+  }
+
+  .our-team__body {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__title {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .about__title h1 {
+    font-size: 48px;
+  }
+
+  .about__foodiefy {
+    margin: 0 auto;
+    max-width: 900px;
+  }
+
+  .our-team__body {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
 }

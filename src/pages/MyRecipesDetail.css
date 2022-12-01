@@ -1,0 +1,36 @@
+.myrecipes-detail {
+  padding: 30px;
+}
+
+.myrecipes-detail__image {
+  padding: 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+}
+
+.myrecipes-detail__image-box {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.myrecipes-detail__createdAt {
+  color: var(--date-color);
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+.myrecipes-detail__body {
+  padding: 20px;
+  background-color: #dafff3;
+  margin-bottom: 20px;
+  text-align: justify;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.myrecipes-detail h4 {
+  margin-bottom: 10px;
+}
