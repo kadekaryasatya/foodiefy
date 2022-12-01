@@ -12,8 +12,8 @@
 .about__title h4 {
   text-align: center;
   margin-bottom: 10px;
+  font-size: 18px;
   color: var(--date-color);
-  font-weight: 100;
 }
 
 .about__title h1 {
