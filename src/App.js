@@ -62,8 +62,6 @@ class App extends React.Component {
       return (
         <div>
           <Routes>
-            <Route path='/*' element={<LoginPage loginSuccess={this.onLoginSuccess} />} />
-            <Route path='/' element={<HomePage />} />
             <Route path='/register' element={<RegisterPage />} />
             <Route path='/about' element={<About />} />
           </Routes>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Poppins&display=swap'); */
 
 :root {
   --background: #ffffff;
@@ -23,8 +23,6 @@ html {
 
 body {
   font-family: 'Lexend', sans-serif;
-
-  font-size: 16px;
 }
 
 /*
@@ -94,9 +92,6 @@ body {
  * responsive
  */
 @media screen and (min-width: 1000px) {
-  main {
-    max-width: 900px;
-  }
   .popular {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
