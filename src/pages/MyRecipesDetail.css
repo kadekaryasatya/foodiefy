@@ -19,7 +19,7 @@
 .myrecipes-detail__createdAt {
   color: var(--date-color);
   font-size: 12px;
-  margin-bottom: 50px;
+  margin-bottom: 5px;
 }
 
 .myrecipes-detail__body {
@@ -33,4 +33,55 @@
 
 .myrecipes-detail h4 {
   margin-bottom: 10px;
+}
+
+/* 
+   Responsive
+*/
+
+@media screen and (min-width: 600px) {
+  .similiar-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .similiar-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .myrecipes-detail__content {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .myrecipes-detail__title {
+    margin-top: 50px;
+    font-size: 40px;
+  }
+
+  .myrecipes-detail {
+    max-width: 1500px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .similiar {
+    max-width: 1500px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .similiar-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
 }

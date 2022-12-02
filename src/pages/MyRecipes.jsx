@@ -60,9 +60,9 @@ function MyRecipes() {
 
   return (
     <section>
-      <div class='hero'>
-        <div class='hero__inner'>
-          <h1 class='hero__title'>
+      <div className='hero'>
+        <div className='hero__inner'>
+          <h1 className='hero__title'>
             Create Your<span> Own </span>Recipes
           </h1>
           <Link to='/add'>

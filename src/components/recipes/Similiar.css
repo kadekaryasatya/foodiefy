@@ -1,30 +1,30 @@
 /*
- * popular
+ * similiar
  */
-.popular {
+.similiar {
   padding: 30px;
 }
-.popular__label {
+.similiar__label {
   margin-bottom: 8px;
 }
 
 /*
- * popular item
+ * similiar item
  */
 
-/* .popular-item__content {
+/* .similiar-item__content {
   display: flex;
   padding: 16px;
 } */
 
-.popular-item__thumbnail {
+.similiar-item__thumbnail {
   align-items: center;
   padding: 5px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
   width: 100%;
 }
 
-.popular-item__title {
+.similiar-item__title {
   font-size: 14px;
   color: var(--font-color);
   text-decoration: none;
@@ -32,7 +32,7 @@
   margin-bottom: 16px;
 }
 
-/* .popular-item__rating {
+/* .similiar-item__rating {
   color: aliceblue;
   border-radius: 5px;
   padding: 5px;

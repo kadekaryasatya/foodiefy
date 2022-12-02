@@ -4,6 +4,8 @@ import { HiArrowLeft } from 'react-icons/hi';
 import { getNotes } from '../utils/api';
 import { showFormattedDate } from '../utils/api';
 import NotFound from './NotFound';
+import Popular from '../components/recipes/Popular';
+import Similiar from '../components/recipes/Similiar';
 
 // import LocaleContext from '../contexts/LocaleContext';
 // import { ClimbingBoxLoader } from 'react-spinners';
@@ -33,19 +35,27 @@ function MyRecipesDetail() {
     return <NotFound />;
   }
   return (
-    <section className='myrecipes-detail'>
+    <section>
       {/* <Link to='/' title='Back'>
         <HiArrowLeft /> {locale === 'id' ? 'Kembali' : 'Back'}
       </Link> */}
-      <div className='myrecipes-detail__image-box'>
-        <img className='myrecipes-detail__image' src='../detail.png' alt='recipe' />
+      <div className='myrecipes-detail'>
+        <div className='myrecipes-detail__content'>
+          <div className='myrecipes-detail__image-box'>
+            <img className='myrecipes-detail__image' src='../detail.png' alt='recipe' />
+          </div>
+          <div>
+            <h2 className='myrecipes-detail__title'>{recipe.title}</h2>
+            <p className='myrecipes-detail__createdAt'>{showFormattedDate(recipe.createdAt)}</p>
+            <p>⭐️⭐️⭐️⭐️⭐️</p>
+          </div>
+        </div>
+        <h4>Description</h4>
+        <div className='myrecipes-detail__body'>
+          <p>{recipe.body}</p>
+        </div>
       </div>
-      <h2 className='myrecipes-detail__title'>{recipe.title}</h2>
-      <p className='myrecipes-detail__createdAt'>{showFormattedDate(recipe.createdAt)}</p>
-      <h4>Description</h4>
-      <div className='myrecipes-detail__body'>
-        <p>{recipe.body}</p>
-      </div>
+      <Similiar />;
     </section>
   );
 }

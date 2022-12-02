@@ -17,17 +17,20 @@ function Popular() {
 
   return (
     <div className='popular'>
-      {popular.map((recipe) => {
-        return (
-          <article className='popular-item' key={recipe.id}>
-            <img className='popular-item__thumbnail' src={recipe.image} alt={recipe.title} />
-            <div className='popular-item__content'>
-              <h3 className='popular-item__title'>{recipe.title}</h3>
-              <span className='popular-item__rating'>{recipe.healthScore}</span>
-            </div>
-          </article>
-        );
-      })}
+      <h3 className='popular__label'> 20 Popular Recipes</h3>
+      <div className='popular-list'>
+        {popular.map((recipe) => {
+          return (
+            <article className='popular-item' key={recipe.id}>
+              <img className='popular-item__thumbnail' src={recipe.image} alt={recipe.title} />
+              <div className='popular-item__content'>
+                <h3 className='popular-item__title'>{recipe.title}</h3>
+                {/* <span className='popular-item__rating'>{recipe.healthScore}</span> */}
+              </div>
+            </article>
+          );
+        })}
+      </div>
     </div>
   );
 }
