@@ -9,7 +9,7 @@ import SearchBar from '../components/layout/SearchBar';
 // import LocaleContext from '../contexts/LocaleContext';
 // import { PacmanLoader } from 'react-spinners';
 import HeroRecipes from '../components/myRecipes/HeroRecipes';
-import ColorBlur from '../components/colorBlur/ColorBlur';
+import Popular from '../components/recipes/Popular';
 
 import './MyRecipes.css';
 
@@ -60,8 +60,20 @@ function MyRecipes() {
 
   return (
     <section>
-      <ColorBlur />
+      <div class='hero'>
+        <div class='hero__inner'>
+          <h1 class='hero__title'>
+            Create Your<span> Own </span>Recipes
+          </h1>
+          <Link to='/add'>
+            <button className='btn btn-outline-secondary' type='button'>
+              Add +
+            </button>
+          </Link>
 
+          {/* <p class='hero__tagline'>Kumpulan Restaurant terbaik di Indonesia</p> */}
+        </div>
+      </div>
       <div className='active-recipes'>
         <div className='active-recipes__title'>
           <h3>My recipes</h3>
@@ -71,6 +83,7 @@ function MyRecipes() {
         </div> */}
         {notes.length !== 0 ? <RecipeList notes={filteredRecipes} /> : <h5 className=''>No Recipes Here....</h5>}
       </div>
+      <Popular />
     </section>
   );
 }

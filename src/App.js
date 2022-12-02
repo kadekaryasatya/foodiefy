@@ -11,6 +11,7 @@ import About from './pages/About';
 import MyRecipes from './pages/MyRecipes';
 import NotFound from './pages/NotFound';
 import MyRecipesDetail from './pages/MyRecipesDetail';
+import ColorBlur from './components/colorBlur/ColorBlur';
 
 class App extends React.Component {
   constructor(props) {
@@ -66,7 +67,7 @@ class App extends React.Component {
             <Routes>
               <Route path='/*' element={<LoginPage loginSuccess={this.onLoginSuccess} />} />
               <Route path='/' element={<HomePage />} />
-              <Route path='/register' element={<p>Halaman Register</p>} />
+              <Route path='/register' element={<RegisterPage />} />
               <Route path='*' element={<NotFound />} />
               <Route path='/about' element={<About />} />
             </Routes>
@@ -77,6 +78,7 @@ class App extends React.Component {
 
     return (
       <div>
+        <ColorBlur />
         <Navbar />
         <Routes>
           <Route path='/' element={<HomePage />} />

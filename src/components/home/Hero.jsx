@@ -24,7 +24,7 @@ function Hero() {
             </div>
             <input type='text' className='text-secondary form-control' placeholder='Search for the recipe you want!' aria-label='Search for the recipe you want!' aria-describedby='basic-addon2'></input>
             <div className='input-group-append'>
-              <button className='btn btn-outline-secondary' type='button'>
+              <button href='/add' className='btn btn-outline-secondary' type='button'>
                 Search <FaAngleRight></FaAngleRight>
               </button>
             </div>

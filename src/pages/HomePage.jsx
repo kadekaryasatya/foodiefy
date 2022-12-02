@@ -4,12 +4,9 @@ import Hero from '../components/home/Hero';
 import Subscribe from '../components/home/Subscribe';
 import Footer from '../components/layout/Footer';
 
-import ColorBlur from '../components/colorBlur/ColorBlur';
-
 function HomePage() {
   return (
     <div>
-      <ColorBlur></ColorBlur>
       <Hero></Hero>
       <FeaturedRecipe></FeaturedRecipe>
       <Subscribe></Subscribe>

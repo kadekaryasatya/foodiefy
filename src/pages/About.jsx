@@ -6,7 +6,6 @@ import './About.css';
 function About() {
   return (
     <div>
-      <ColorBlur />
       <div className='about'>
         {/* <img className='about__image' src='../detail.png' alt='recipe' /> */}
         <div className='about__title'>
