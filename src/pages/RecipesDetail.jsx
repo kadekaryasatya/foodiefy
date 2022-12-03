@@ -26,7 +26,6 @@ function Detail() {
     };
   }, [id]);
 
-  // const fetchDetail = async () => {};
   return (
     <section>
       <div className='recipe-detail'>
@@ -39,11 +38,11 @@ function Detail() {
             <p className='recipe-detail__source'>{details.sourceName}</p>
             <div className='recipe-detail__item'>
               <div className='ready'>
-                <span>{details.readyInMinutes} Minutes</span>
-                <p>Cook Time</p>
+                <span>{details.readyInMinutes}</span>
+                <p>Minutes</p>
               </div>
               <div className='price'>
-                <span>$ {details.pricePerServing} </span>
+                <span>${details.pricePerServing} </span>
                 <p>Per serving</p>
               </div>
               <div className='health'>

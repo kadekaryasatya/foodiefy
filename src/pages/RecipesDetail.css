@@ -22,6 +22,7 @@
 .recipe-detail__source {
   color: var(--date-color);
 }
+
 /* 
    Item
 */
@@ -31,21 +32,36 @@
 }
 
 .ready {
+  text-align: center;
   padding-top: 5px;
   padding-right: 15px;
   border-right: 1px solid #bababa;
+}
+
+.ready span {
+  font-size: 25px;
 }
 
 .price {
+  text-align: center;
   padding-top: 5px;
   padding-right: 15px;
   padding-left: 15px;
   border-right: 1px solid #bababa;
 }
 
+.price span {
+  font-size: 25px;
+}
+
 .health {
+  text-align: center;
   padding-top: 5px;
   padding-left: 15px;
+}
+
+.health span {
+  font-size: 25px;
 }
 
 /* 
