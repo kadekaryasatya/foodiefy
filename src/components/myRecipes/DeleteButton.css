@@ -1,0 +1,7 @@
+.note-item__delete-button {
+  font-size: 30px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  color: rgb(215, 31, 31);
+}
