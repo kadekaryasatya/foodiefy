@@ -1,10 +1,12 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { HiArrowLeft } from 'react-icons/hi';
-import { getNotes } from '../utils/api';
+import { getNotes, getActiveNotes, deleteNote } from '../utils/api';
 import { showFormattedDate } from '../utils/api';
 import NotFound from './NotFound';
 import Popular from '../components/recipes/Popular';
+import DeleteButton from '../components/myRecipes/DeleteButton';
+import { useNavigate } from 'react-router-dom';
 
 // import LocaleContext from '../contexts/LocaleContext';
 // import { ClimbingBoxLoader } from 'react-spinners';
@@ -14,6 +16,7 @@ import './MyRecipesDetail.css';
 function MyRecipesDetail() {
   const [recipe, setRecipe] = useState([]);
   const { id } = useParams();
+  const navigate = useNavigate();
   // const { locale } = useContext(LocaleContext);
   // const [loading, setLoading] = useState(false);
 
@@ -22,6 +25,14 @@ function MyRecipesDetail() {
       setRecipe(data);
     });
   }, [id]);
+
+  async function onDeleteHandler(id) {
+    await deleteNote(id);
+    navigate('/myrecipes');
+    // update the note state from api.js
+    const { data } = await getActiveNotes();
+    setRecipe(data);
+  }
 
   // useEffect(() => {
   //   setLoading(true);
@@ -47,6 +58,7 @@ function MyRecipesDetail() {
             <h2 className='myrecipes-detail__title'>{recipe.title}</h2>
             <p className='myrecipes-detail__createdAt'>{showFormattedDate(recipe.createdAt)}</p>
             <p>⭐️⭐️⭐️⭐️⭐️</p>
+            <DeleteButton id={id} onDelete={onDeleteHandler} />
           </div>
         </div>
         <h4>Description</h4>

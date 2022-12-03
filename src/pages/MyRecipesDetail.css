@@ -23,6 +23,7 @@
 }
 
 .myrecipes-detail__body {
+  white-space: pre-line;
   padding: 20px;
   background-color: #dafff3;
   margin-bottom: 20px;
