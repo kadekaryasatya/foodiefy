@@ -13,6 +13,7 @@ import NotFound from './pages/NotFound';
 import MyRecipesDetail from './pages/MyRecipesDetail';
 import ColorBlur from './components/colorBlur/ColorBlur';
 import Detail from './pages/RecipesDetail';
+import Footer from './components/layout/Footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -91,6 +92,7 @@ class App extends React.Component {
           <Route path='/recipe/:id' element={<Detail />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
+        <Footer />
       </div>
     );
   }
