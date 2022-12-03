@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom';
 import { getUserLogged, putAccessToken } from './utils/api';
 
 import HomeLoginPage from "./pages/LoginPage from './page";
-import Regis/HomePage';
 import AddPageterPage from './pages/AddRegistrePage';
 import Navbar from './component/layout/Navbar';
 import RegisterPage from './pages/RegisterPage';
@@ -79,13 +78,7 @@ class App extends React.Component {
         </div>
       );
     }
-
-function App() {
-  return (
-    <div className="app">
-      <Pages />
-    </div>
-  );
+  }
 }
 
 export default App;
