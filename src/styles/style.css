@@ -16,95 +16,250 @@ body {
   font-size: 12px;
 }
 
-/*
- * pages
- */
-
-.pages {
-  width: 100%;
-  margin: 0 auto;
-}
-
-/*
- * popular
- */
-.popular {
-  padding: 50px;
-  margin: 32px auto auto;
-  text-align: left;
-}
-
-.popular__label {
+.title-app__header {
+  text-align: center;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 700;
   font-size: 40px;
-  text-align: center;
-  font-weight: 500;
-  padding: 20px;
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 3%;
+  color: #1B1C57;
 }
 
-/*
- * popular item
- */
-
-.popular-item {
-  margin-bottom: 16px;
-  background-color: #c1b654;
-  width: 100%;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.popular-item__content {
+.login-item {
   display: flex;
-  padding: 16px;
-}
-
-.popular-item__thumbnail {
   width: 100%;
-  height: 70%;
+  margin-top: 3%;
 }
 
-.popular-item__title {
-  color: white;
-  font-size: 18px;
-  font-weight: 500;
+.login-logo {
+  width: 40%;
+  margin-left: 15%;
 }
 
-.popular-item__rating {
-  color: aliceblue;
-  border-radius: 5px;
-  padding: 5px;
-  font-weight: bold;
-  margin-left: auto;
-  font-weight: 500;
+.login-logo__item img {
+  width: 600px;
+  height: 350px;
 }
 
-/*
- * footer
- */
-.footer {
-  color: rgb(170, 166, 166);
-  width: 100%;
-  position: absolute;
-  border-top: 1px solid;
-  margin-top: 50px;
-  padding: 30px;
+.login-logo__item h2{
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: #1C1D21;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.login-logo__item p{
+  width: 500px;
+  height: 76px;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
   text-align: center;
-  background-color: #f2d1d1;
-  font-size: 15px;
+  color: #000000;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
-/*
- * responsive
- */
-@media screen and (min-width: 1000px) {
-  main {
-    max-width: 900px;
-  }
-  .popular {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
-  }
+.login-form {
+  background: rgba(68, 255, 193, 0.2);
+  border-radius: 35px;
+  height: 480px;
+  margin-left: 50px;
 }
+
+.login-form__content {
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.title-login__item {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  color: #000000;
+}
+
+.create-account__item {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+}
+
+.login-form__item {
+  margin-top: 50px;
+}
+
+.login-form__item h5 {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.login-form__item input {
+  width: 394px;
+  height: 52px;
+  left: 903px;
+  top: 437px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-weight: 900;
+  padding: 15px;
+}
+
+.login-btn {
+  width: 200px;
+  height: 40px;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+  background: #1B1C57;
+  border: 1px solid #1B1C57;
+  border-radius: 30px;
+  color: #FEFEFE;
+  position: absolute;
+  margin-left: 105px;
+  margin-top: 40px;
+}
+
+.register-item {
+  display: flex;
+  width: 100%;
+  margin-top: 3%;
+}
+
+.register-logo {
+  width: 40%;
+  margin-left: 15%;
+}
+
+.register-logo__item img {
+  width: 600px;
+  height: 350px;
+}
+
+.register-logo__item h2{
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: #1C1D21;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.register-logo__item p{
+  width: 500px;
+  height: 76px;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  color: #000000;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.register-form {
+  background: rgba(68, 255, 193, 0.2);
+  border-radius: 35px;
+  height: 530px;
+  margin-left: 50px;
+}
+
+.register-form__content {
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.title-register__item {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  color: #000000;
+}
+
+.have-account__item {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+}
+
+.register-form__item {
+  margin-top: 20px;
+}
+
+.register-form__item h5 {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.register-form__item input {
+  width: 394px;
+  height: 52px;
+  left: 903px;
+  top: 437px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-weight: 900;
+  padding: 15px;
+}
+
+.register-btn {
+  width: 200px;
+  height: 40px;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+  background: #1B1C57;
+  border: 1px solid #1B1C57;
+  border-radius: 30px;
+  color: #FEFEFE;
+  position: absolute;
+  margin-left: 105px;
+  margin-top: 40px;
+}
+
+
