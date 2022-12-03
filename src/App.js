@@ -2,9 +2,10 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { getUserLogged, putAccessToken } from './utils/api';
 
-import HomePage from './pages/HomePage';
-import AddPage from './pages/AddPage';
-import Navbar from './components/layout/Navbar';
+import HomeLoginPage from "./pages/LoginPage from './page";
+import Regis/HomePage';
+import AddPageterPage from './pages/AddRegistrePage';
+import Navbar from './component/layout/Navbar';
 import RegisterPage from './pages/RegisterPage';
 import LoginPage from './pages/LoginPage';
 import About from './pages/About';
@@ -79,23 +80,12 @@ class App extends React.Component {
       );
     }
 
-    return (
-      <div>
-        <ColorBlur />
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/myrecipes' element={<MyRecipes />} />
-          <Route path='/add' element={<AddPage />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/notes/:id' element={<MyRecipesDetail />} />
-          <Route path='/recipe/:id' element={<Detail />} />
-          <Route path='*' element={<NotFound />} />
-        </Routes>
-        <Footer />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="app">
+      <Pages />
+    </div>
+  );
 }
 
 export default App;
