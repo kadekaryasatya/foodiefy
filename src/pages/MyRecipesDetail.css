@@ -39,22 +39,6 @@
    Responsive
 */
 
-@media screen and (min-width: 600px) {
-  .similiar-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .similiar-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .myrecipes-detail__content {
     display: flex;
@@ -71,17 +55,5 @@
     max-width: 1500px;
     padding-left: 15%;
     padding-right: 15%;
-  }
-
-  .similiar {
-    max-width: 1500px;
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-
-  .similiar-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
   }
 }

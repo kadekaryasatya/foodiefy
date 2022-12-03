@@ -6,11 +6,12 @@ import Popular from '../components/recipes/Popular';
 
 function Detail() {
   const [details, setDetails] = useState({});
+  const [activeTab, setActiveTab] = useState('instructions');
 
   const { id } = useParams();
 
   const getDetails = async () => {
-    const resp = await fetch(`https://api.spoonacular.com/recipes/${id}/information?apiKey=39b73cc197374a43b03259265314bf57`);
+    const resp = await fetch(`https://api.spoonacular.com/recipes/${id}/information?apiKey=25fdc99073454df1a6207314399886ee`);
     const data = await resp.json();
     return data;
   };
@@ -58,29 +59,29 @@ function Detail() {
           <p dangerouslySetInnerHTML={{ __html: details.summary }}></p>
         </div>
         <div>
-          <div className='recipe-detail__content'>
-            <div className='recipe-detail__instructions'>
-              <div className='instructions__title'>
-                <h4>Instructions</h4>
-              </div>
-              <div className='instructions__body'>
-                <p dangerouslySetInnerHTML={{ __html: details.instructions }}></p>
-              </div>
-            </div>
+          <div className='recipe-detail__instructions'>
+            <div className='instructions__body'>
+              <button className={activeTab === 'instructions' ? 'active' : ''} onClick={() => setActiveTab('instructions')}>
+                <b>Instructions</b>
+              </button>
 
-            <div className='recipe-detail__ingredients'>
-              <div className='ingredients__title'>
-                <h4>Ingredients</h4>
-              </div>
-              <div className='ingredients__body'>
-                <ul></ul>
-              </div>
+              <button className={activeTab === 'ingredients' ? 'active' : ''} onClick={() => setActiveTab('ingredients')}>
+                <b>Ingredients</b>
+              </button>
+              {activeTab === 'instructions' ? (
+                <p dangerouslySetInnerHTML={{ __html: details.instructions }}></p>
+              ) : (
+                <ul>
+                  {details.extendedIngredients.map((ingredient) => (
+                    <li key={ingredient.id}>{ingredient.original}</li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         </div>
-
-        <div className='recipe-detail__title'></div>
       </div>
+
       <Popular />
     </section>
   );

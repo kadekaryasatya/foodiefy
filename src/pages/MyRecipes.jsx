@@ -8,10 +8,11 @@ import { getActiveNotes, deleteNote, archiveNote } from '../utils/api';
 import SearchBar from '../components/layout/SearchBar';
 // import LocaleContext from '../contexts/LocaleContext';
 // import { PacmanLoader } from 'react-spinners';
-import HeroRecipes from '../components/myRecipes/HeroRecipes';
+
 import Popular from '../components/recipes/Popular';
 
 import './MyRecipes.css';
+import Vegetarian from '../components/recipes/Vegetarian';
 
 function MyRecipes() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -84,6 +85,7 @@ function MyRecipes() {
         {notes.length !== 0 ? <RecipeList notes={filteredRecipes} /> : <h5 className=''>No Recipes Here....</h5>}
       </div>
       <Popular />
+      {/* <Vegetarian /> */}
     </section>
   );
 }
