@@ -9,7 +9,7 @@ function Similiar() {
   }, []);
 
   const getSimiliar = async () => {
-    const api = await fetch('https://api.spoonacular.com/recipes/random?apiKey=39b73cc197374a43b03259265314bf57&number=20');
+    const api = await fetch('https://api.spoonacular.com/recipes/{id}/similar?apiKey=ad0bf0be4ce04adbbcf887e87b2973bd&number=5');
     const data = await api.json();
     console.log(data);
     setSimiliar(data.recipes);

@@ -12,6 +12,7 @@ import MyRecipes from './pages/MyRecipes';
 import NotFound from './pages/NotFound';
 import MyRecipesDetail from './pages/MyRecipesDetail';
 import ColorBlur from './components/colorBlur/ColorBlur';
+import Detail from './pages/RecipesDetail';
 
 class App extends React.Component {
   constructor(props) {
@@ -70,6 +71,7 @@ class App extends React.Component {
               <Route path='/register' element={<RegisterPage />} />
               <Route path='*' element={<NotFound />} />
               <Route path='/about' element={<About />} />
+              <Route path='/recipe/:id' element={<Detail />} />
             </Routes>
           </main>
         </div>
@@ -86,6 +88,7 @@ class App extends React.Component {
           <Route path='/add' element={<AddPage />} />
           <Route path='/about' element={<About />} />
           <Route path='/notes/:id' element={<MyRecipesDetail />} />
+          <Route path='/recipe/:id' element={<Detail />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </div>

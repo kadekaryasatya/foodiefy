@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom';
 
 function RecipeItemTitle({ id, title }) {
   return (
-    <h3 className='recipe-item__title'>
+    <div className='recipe-item__title'>
       <Link to={`/notes/${id}`} title={title}>
-        {title}
+        <img className='recipe-item__image' src='favicon.png' alt='recipe' />
+        <p>{title}</p>
       </Link>
-    </h3>
+    </div>
   );
 }
 

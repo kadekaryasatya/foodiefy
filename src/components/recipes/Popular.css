@@ -12,11 +12,6 @@
  * popular item
  */
 
-/* .popular-item__content {
-  display: flex;
-  padding: 16px;
-} */
-
 .popular-item__thumbnail {
   align-items: center;
   padding: 5px;
@@ -24,12 +19,25 @@
   width: 100%;
 }
 
-.popular-item__title {
-  font-size: 14px;
-  color: var(--font-color);
+.popular-item__title p {
+  color: var(--text-color);
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.popular-item__title p:hover {
+  color: #34d9a2;
+}
+
+.popular-item__title a {
   text-decoration: none;
   margin-top: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 5px;
+}
+
+.popular-item__source {
+  color: var(--date-color);
 }
 
 /* .popular-item__rating {

@@ -7,7 +7,6 @@ import RecipeItemDate from './RecipeItemDate';
 function RecipeItem({ id, title, body, createdAt }) {
   return (
     <div className='recipe-item'>
-      <img className='recipe-item__image' src='favicon.png' alt='recipe' />
       <div className='recipe-item__content'>
         <RecipeItemTitle key={id} id={id} title={title} />
         <RecipeItemDate date={createdAt} />

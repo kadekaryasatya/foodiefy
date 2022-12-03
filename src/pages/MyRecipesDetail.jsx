@@ -5,7 +5,6 @@ import { getNotes } from '../utils/api';
 import { showFormattedDate } from '../utils/api';
 import NotFound from './NotFound';
 import Popular from '../components/recipes/Popular';
-import Similiar from '../components/recipes/Similiar';
 
 // import LocaleContext from '../contexts/LocaleContext';
 // import { ClimbingBoxLoader } from 'react-spinners';
@@ -55,7 +54,7 @@ function MyRecipesDetail() {
           <p>{recipe.body}</p>
         </div>
       </div>
-      <Similiar />;
+      <Popular />
     </section>
   );
 }
