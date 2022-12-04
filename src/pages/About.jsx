@@ -18,15 +18,12 @@ function About() {
           <div className='about__foodiefy'>
             <div className='about__foodiefy1'>
               <h2>Search</h2>
-              <h3></h3>
             </div>
             <div className='about__foodiefy2'>
               <h2>Explore</h2>
-              <h3></h3>
             </div>
             <div className='about__foodiefy3'>
               <h2>Create</h2>
-              <h3></h3>
             </div>
           </div>
         </div>

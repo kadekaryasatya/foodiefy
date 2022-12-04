@@ -93,6 +93,7 @@ body {
 
 .title-login__item {
   font-family: 'Lexend';
+
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -102,10 +103,11 @@ body {
 }
 
 .create-account__item {
+  font-size: 14px;
   font-family: 'Lexend';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+
   line-height: 25px;
   text-align: center;
   color: #000000;

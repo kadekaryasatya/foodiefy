@@ -45,7 +45,7 @@ function RegisterPage() {
         <button>Register</button>
       </form>
       <p className='login'>
-        Aleready have account? <Link to='/'> Login</Link>
+        Aleready have account? <Link to='/*'> Login</Link>
       </p>
     </section>
   );

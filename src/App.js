@@ -86,7 +86,7 @@ class App extends React.Component {
     return (
       <div>
         <ColorBlur />
-        <Navbar />
+        <Navbar logout={this.onLogout} name={this.state.authedUser.name} />
         <main>
           <Routes>
             <Route path='/' element={<HomePage />} />

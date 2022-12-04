@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CreateAccount = () => {
   return (
     <div className='create-account__item'>
-      <p>{/* Belum memiliki akun? Daftar */}</p>
+      <p>
+        Don't have any Account? <Link to='/register'> Register</Link>
+      </p>
     </div>
   );
 };
