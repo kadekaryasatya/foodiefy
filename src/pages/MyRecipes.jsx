@@ -10,6 +10,7 @@ import SearchBar from '../components/layout/SearchBar';
 // import { PacmanLoader } from 'react-spinners';
 
 import Popular from '../components/recipes/Popular';
+import Footer from '../components/layout/Footer';
 
 import './MyRecipes.css';
 import Vegetarian from '../components/recipes/Vegetarian';
@@ -67,8 +68,8 @@ function MyRecipes() {
             Create Your<span> Own </span>Recipes
           </h1>
           <Link to='/add'>
-            <button className='btn btn-outline-secondary' type='button'>
-              Add +
+            <button className='button-add' type='button'>
+              + Add Recipes
             </button>
           </Link>
 
@@ -85,6 +86,7 @@ function MyRecipes() {
         {notes.length !== 0 ? <RecipeList notes={filteredRecipes} /> : <h5 className=''>No Recipes Here....</h5>}
       </div>
       <Popular />
+      <Footer />
       {/* <Vegetarian /> */}
     </section>
   );

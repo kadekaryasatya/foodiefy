@@ -7,6 +7,7 @@ import NotFound from './NotFound';
 import Popular from '../components/recipes/Popular';
 import DeleteButton from '../components/myRecipes/DeleteButton';
 import { useNavigate } from 'react-router-dom';
+import Footer from '../components/layout/Footer';
 
 // import LocaleContext from '../contexts/LocaleContext';
 // import { ClimbingBoxLoader } from 'react-spinners';
@@ -67,6 +68,7 @@ function MyRecipesDetail() {
         </div>
       </div>
       <Popular />
+      <Footer />
     </section>
   );
 }

@@ -79,6 +79,21 @@
   font-weight: 300;
 }
 
+.button-add {
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #4f52ce;
+  cursor: pointer;
+  color: white;
+  border: 1px solid;
+  padding: 10px;
+}
+
+.button-add:hover {
+  background-color: #292a61;
+}
+
 /* 
    Responsive
 */
