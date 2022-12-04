@@ -9,6 +9,10 @@
 
 .search-bar {
   width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid var(--date-color);
+  border-radius: 32px !important;
 }
 
 /* 
@@ -111,6 +115,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
+  }
+
+  .search-bar {
+    width: 40%;
+  }
+  .active-recipes__title {
+    justify-content: space-between;
+    display: flex;
   }
 }
 

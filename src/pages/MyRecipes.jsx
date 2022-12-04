@@ -38,13 +38,6 @@ function MyRecipes() {
   //   }, 2000);
   // }, []);
 
-  // async function onDeleteHandler(id) {
-  //   await deleteNote(id);
-  //   // update the note state from api.js
-  //   const { data } = await getActiveNotes();
-  //   setNotes(data);
-  // }
-
   // async function onArchiveHandler(id) {
   //   await archiveNote(id);
   //   const { data } = await getActiveNotes();
@@ -79,6 +72,7 @@ function MyRecipes() {
       <div className='active-recipes'>
         <div className='active-recipes__title'>
           <h3>My recipes</h3>
+          <SearchBar keyword={keyword} keywordChange={onKeywordChangeHandler} />
         </div>
         {/* <div className='active-recipes__header'>
           <SearchBar keyword={keyword} keywordChange={onKeywordChangeHandler} />

@@ -6,6 +6,7 @@
   color: white;
   border: 1px solid;
   padding: 10px;
+  margin-bottom: 30px;
 }
 
 .note-item__delete-button:hover {

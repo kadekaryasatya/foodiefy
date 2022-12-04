@@ -12,7 +12,7 @@ function Detail() {
   const { id } = useParams();
 
   const getDetails = async () => {
-    const resp = await fetch(`https://api.spoonacular.com/recipes/${id}/information?apiKey=25fdc99073454df1a6207314399886ee`);
+    const resp = await fetch(`https://api.spoonacular.com/recipes/${id}/information?apiKey=0f992e4eda01432b9170203d0eae7eab`);
     const data = await resp.json();
     return data;
   };

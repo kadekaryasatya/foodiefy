@@ -10,7 +10,7 @@ function About() {
         {/* <img className='about__image' src='../detail.png' alt='recipe' /> */}
         <div className='about__title'>
           <h4>About Foodiefy</h4>
-          <h1>" The Best Platform To Manage Your Favorite Recipes "</h1>
+          <h1>"Your Best Platform To Manage Your Favorite Recipes"</h1>
         </div>
 
         <div className='about__features'>
