@@ -4,7 +4,7 @@ import RecipeItemTitle from './RecipeItemTitle';
 // import RecipeItemBody from './RecipeItemBody';te
 import RecipeItemDate from './RecipeItemDate';
 
-function RecipeItem({ id, title, body, createdAt }) {
+function RecipeItem({ id, title, createdAt }) {
   return (
     <div className='recipe-item'>
       <div className='recipe-item__content'>
