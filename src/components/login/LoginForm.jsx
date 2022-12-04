@@ -16,10 +16,10 @@ function LoginForm({ loginSuccess }) {
 
   return (
     <form onSubmit={handleSubmit} className='login-form__item'>
-      <h5>No telpon atau email</h5>
-      <input type='email' placeholder='Email' value={email} onChange={onEmailChange} className='login-email' />
+      <h5>Email</h5>
+      <input type='email' placeholder='ex : foodiefy@gmail.com' value={email} onChange={onEmailChange} className='login-email' />
       <h5>Password</h5>
-      <input type='password' placeholder='Password' value={password} onChange={onPasswordChange} />
+      <input type='password' placeholder='ex : foodiefy123' value={password} onChange={onPasswordChange} />
       <p></p>
       <button className='login-btn' title='Login'>
         Masuk

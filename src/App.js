@@ -1,22 +1,19 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { getUserLogged, putAccessToken } from './utils/api';
-
-// import HomeLoginPage from "./pages/LoginPage from './page";
-// import AddPageterPage from './pages/AddRegistrePage';
 import Navbar from './components/layout/Navbar';
-import RegisterPage from './pages/RegisterPage';
-// import LoginPage from './pages/LoginPage';
+import ColorBlur from './components/colorBlur/ColorBlur';
+
+//Pages
 import About from './pages/About';
 import MyRecipes from './pages/MyRecipes';
 import NotFound from './pages/NotFound';
 import MyRecipesDetail from './pages/MyRecipesDetail';
-import ColorBlur from './components/colorBlur/ColorBlur';
 import Detail from './pages/RecipesDetail';
-import Footer from './components/layout/Footer';
 import HomePage from './pages/HomePage';
-import LoginPage from './pages/LoginPage1';
+import LoginPage from './pages/LoginPage';
 import AddPage from './pages/AddPage';
+import RegisterPage from './pages/RegisterPage';
 
 class App extends React.Component {
   constructor(props) {
