@@ -1,5 +1,5 @@
 import React from 'react';
-import ColorBlur from '../components/colorBlur/ColorBlur';
+import Footer from '../components/layout/Footer';
 
 import './About.css';
 
@@ -64,6 +64,7 @@ function About() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
