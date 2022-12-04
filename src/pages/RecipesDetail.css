@@ -102,6 +102,7 @@
 }
 
 .instructions__body b {
+  color: var(--date-color);
   font-weight: 500;
   font-size: 15px;
 }
@@ -111,6 +112,7 @@
   color: var(--text-color);
 }
 .active b {
+  color: var(--text-color);
   font-weight: bold;
 }
 
