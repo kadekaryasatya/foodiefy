@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './RecipesDetail.css';
 import Popular from '../components/recipes/Popular';
+import Footer from '../components/layout/Footer';
 
 function Detail() {
   const [details, setDetails] = useState({});
@@ -83,6 +84,7 @@ function Detail() {
       </div>
 
       <Popular />
+      <Footer />
     </section>
   );
 }
