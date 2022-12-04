@@ -1,12 +1,9 @@
-import React from "react";
-
+import React from 'react';
 
 const TitleApp = () => {
   return (
     <header>
-      <h1>
-         Foodify
-      </h1>
+      <h1>Foodiefy</h1>
     </header>
   );
 };

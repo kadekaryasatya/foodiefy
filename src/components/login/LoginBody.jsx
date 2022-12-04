@@ -1,21 +1,19 @@
-import React from "react";
-import LoginForm from "./LoginFrom";
-import LoginButton from "./LoginButton";
-import TitleLogin from "./TitleLogin";
-import CreateAccount from "./CreateAccount";
+import React from 'react';
+import LoginForm from './LoginForm';
+import LoginButton from './LoginButton';
+import TitleLogin from './TitleLogin';
+import CreateAccount from './CreateAccount';
 
-
-function LoginBody() {
+function LoginBody({ loginSuccess }) {
   return (
-    <div className="login-body">
-        <div className="login-body__title">
-            <TitleLogin />
-            <CreateAccount />
-        </div>
-        <div className="login-body__form">
-            <LoginForm />
-            <LoginButton />
-        </div> 
+    <div className='login-body'>
+      <div className='login-body__title'>
+        <TitleLogin />
+        <CreateAccount />
+      </div>
+      <div className='login-body__form'>
+        <LoginForm loginSuccess={loginSuccess} />
+      </div>
     </div>
   );
 }

@@ -1,12 +1,9 @@
-import React from "react";
-
+import React from 'react';
 
 const LabelLogin = () => {
   return (
-    <div className="label-login__item">
-      <h2>
-         Memasak Lebih Mudah dengan Foodify
-      </h2>
+    <div className='label-login__item'>
+      <p>" The Best Platform To Manage Your Favorite Recipes "</p>
     </div>
   );
 };
