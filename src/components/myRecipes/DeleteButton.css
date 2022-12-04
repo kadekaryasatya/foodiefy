@@ -1,7 +1,13 @@
 .note-item__delete-button {
-  font-size: 30px;
-  background-color: transparent;
-  border: 0;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: rgb(253, 0, 0);
   cursor: pointer;
-  color: rgb(215, 31, 31);
+  color: white;
+  border: 1px solid;
+  padding: 10px;
+}
+
+.note-item__delete-button:hover {
+  background-color: rgb(197, 31, 31);
 }
