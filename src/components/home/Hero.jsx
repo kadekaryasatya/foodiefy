@@ -1,8 +1,17 @@
 import React from 'react';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './hero.css';
 import { FaAngleRight, FaMapMarkerAlt } from 'react-icons/fa';
 
 function Hero() {
+  const [input, setInput] = useState('');
+  const navigate = useNavigate();
+  const submitHandler = (e) => {
+    e.preventDefault();
+    navigate('/searched/' + input);
+  };
+
   return (
     <div className='container hero-section pt-4 mt-3 w-100'>
       <div className='row w-100 justity-content-center'>
@@ -18,17 +27,27 @@ function Hero() {
             where it will be easier for you
           </p>
 
-          <div className='input-group w-75 mb-3'>
-            <div className='icon-loc'>
-              <FaMapMarkerAlt></FaMapMarkerAlt>
+          <form onSubmit={submitHandler}>
+            <div className='input-group w-75 mb-3'>
+              <div className='icon-loc'>
+                <FaMapMarkerAlt></FaMapMarkerAlt>
+              </div>
+              <input
+                type='text'
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                className='text-secondary form-control'
+                placeholder='Search for the recipe you want!'
+                aria-label='Search for the recipe you want!'
+                aria-describedby='basic-addon2'
+              ></input>
+              <div className='input-group-append'>
+                <button className='btn btn-outline-secondary' type='button'>
+                  Search <FaAngleRight></FaAngleRight>
+                </button>
+              </div>
             </div>
-            <input type='text' className='text-secondary form-control' placeholder='Search for the recipe you want!' aria-label='Search for the recipe you want!' aria-describedby='basic-addon2'></input>
-            <div className='input-group-append'>
-              <button href='/add' className='btn btn-outline-secondary' type='button'>
-                Search <FaAngleRight></FaAngleRight>
-              </button>
-            </div>
-          </div>
+          </form>
         </div>
 
         <div className='col-md-6'>

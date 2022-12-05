@@ -10,7 +10,7 @@ function Popular() {
   }, []);
 
   const getPopular = async () => {
-    const api = await fetch('https://api.spoonacular.com/recipes/random?apiKey=0f992e4eda01432b9170203d0eae7eab&number=4');
+    const api = await fetch('https://api.spoonacular.com/recipes/random?apiKey=39b73cc197374a43b03259265314bf57&number=4');
     const data = await api.json();
     console.log(data);
     setPopular(data.recipes);

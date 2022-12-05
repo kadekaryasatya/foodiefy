@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.css';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = ({ logout, name }) => {
   return (
@@ -16,6 +17,11 @@ const Navbar = ({ logout, name }) => {
             <li className='nav-item'>
               <a className='nav-link ' href='/'>
                 Home
+              </a>
+            </li>
+            <li className='nav-item'>
+              <a className='nav-link' href='/explore'>
+                Explore
               </a>
             </li>
             <li className='nav-item'>

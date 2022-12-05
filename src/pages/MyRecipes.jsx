@@ -5,7 +5,7 @@ import { useSearchParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 // import { MdOutlineAddCircle } from 'react-icons/md';
 import { getActiveNotes, deleteNote, archiveNote } from '../utils/api';
-import SearchBar from '../components/layout/SearchBar';
+import SearchBar from '../components/myRecipes/SearchBar';
 // import LocaleContext from '../contexts/LocaleContext';
 // import { PacmanLoader } from 'react-spinners';
 

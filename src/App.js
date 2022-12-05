@@ -14,6 +14,9 @@ import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import AddPage from './pages/AddPage';
 import RegisterPage from './pages/RegisterPage';
+import Explore from './pages/ExplorePage';
+import Cuisine from './components/explore/Cuisine';
+import Searched from './pages/Searched';
 
 class App extends React.Component {
   constructor(props) {
@@ -74,6 +77,9 @@ class App extends React.Component {
               <Route path='*' element={<NotFound />} />
               <Route path='/about' element={<About />} />
               <Route path='/recipe/:id' element={<Detail />} />
+              <Route path='/explore' element={<Explore />} />
+              <Route path='/cuisines/:type' element={<Cuisine />} />
+              <Route path='/searched/:search' element={<Searched />} />
             </Routes>
           </main>
         </div>
