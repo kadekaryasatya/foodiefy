@@ -9,16 +9,24 @@ const Category = () => {
         <h4>Italian</h4>
       </NavLink>
       <NavLink className='category-nav' to={'/cuisines/American'}>
+        <img src='/images/american.jpg' className='category-img' alt='american'></img>
         <h4>American</h4>
       </NavLink>
       <NavLink className='category-nav' to={'/cuisines/Thai'}>
+        <img src='/images/thailand.jpeg' className='category-img' alt='thailand'></img>
         <h4>Thai</h4>
       </NavLink>
       <NavLink className='category-nav' to={'/cuisines/Japanese'}>
+        <img src='/images/japanese.jpeg' className='category-img' alt='japanese'></img>
         <h4>Japanese</h4>
       </NavLink>
       <NavLink className='category-nav' to={'/cuisines/African'}>
+        <img src='/images/african.jpeg' className='category-img' alt='african'></img>
         <h4>African</h4>
+      </NavLink>
+      <NavLink className='category-nav' to={'/cuisines/Korean'}>
+        <img src='/images/korean.jpeg' className='category-img' alt='chinese'></img>
+        <h4>Korean</h4>
       </NavLink>
     </div>
   );
