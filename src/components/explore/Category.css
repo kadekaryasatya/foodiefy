@@ -1,0 +1,35 @@
+.category {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.category-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  background: transparant;
+  cursor: pointer;
+  transform: scale(0.8);
+}
+
+.category-nav h4 {
+  color: #000000;
+  font-size: 0.8rem;
+}
+
+.category-img {
+  background-size: cover;
+  width: 128px;
+  height: 128px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  margin: 1em auto;
+  padding: 0;
+}

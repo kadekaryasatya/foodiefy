@@ -5,7 +5,7 @@ const TitleApp = () => {
   return (
     <header>
       <h1>
-         Foodify
+         Foodiefy
       </h1>
     </header>
   );

@@ -18,6 +18,7 @@
 }
 
 .about__title h1 {
+  font-size: 30px;
   justify-content: center;
   text-align: center;
   margin: 0 auto;
@@ -39,6 +40,9 @@
   font-weight: 500;
 }
 
+.about__foodiefy h2 {
+  font-size: 18px;
+}
 .about__foodiefy1 {
   background-color: var(--background);
   align-items: center;
@@ -103,7 +107,9 @@
   text-align: center;
   font-weight: 500;
 }
-
+.our-team h3 {
+  font-size: 18px;
+}
 .our-team__body {
   display: grid;
   grid-column: 2;
@@ -218,7 +224,7 @@
   }
 
   .about__title h1 {
-    font-size: 48px;
+    font-size: 42px;
   }
 
   .about__foodiefy {

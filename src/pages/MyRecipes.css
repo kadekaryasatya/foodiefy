@@ -54,7 +54,7 @@
 */
 
 .hero {
-  background-image: url('../hero-myrecipe.jpg');
+  background-image: url('../explore-background.jpg');
   width: 100%;
   min-height: 350px;
   background-size: 100% 100%;
@@ -84,7 +84,7 @@
 }
 
 .button-add {
-  margin-top: 20px;
+  margin-top: 10px;
   border-radius: 10px;
   font-size: 15px;
   background-color: #4f52ce;
@@ -129,7 +129,7 @@
 @media screen and (min-width: 1200px) {
   .hero {
     width: 100%;
-    height: 600px;
+    height: 550px;
   }
   .hero__title {
     color: #1b1c57;

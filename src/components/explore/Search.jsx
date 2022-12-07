@@ -1,8 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 import { FaSearch } from 'react-icons/fa';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Search.css';
+
 function Search() {
   const [input, setInput] = useState('');
   const navigate = useNavigate();
@@ -11,42 +12,13 @@ function Search() {
     navigate('/searched/' + input);
   };
   return (
-    <StyledForm onSubmit={submitHandler}>
-      <div>
+    <form className='search-explore' onSubmit={submitHandler}>
+      <div className='search-explore__content'>
         <FaSearch />
-        <input type='text' value={input} onChange={(e) => setInput(e.target.value)} />
+        <input className='search-explore__input ' type='text' placeholder='Search your recipe here...' value={input} onChange={(e) => setInput(e.target.value)} />
       </div>
-    </StyledForm>
+    </form>
   );
 }
-const StyledForm = styled.form`
-  margin: 0rem 10%;
-  transform: translateX(-16px);
-  div {
-    width: 100%;
-    position: relative;
-  }
-  input {
-    border: none;
-    width: 100%;
-    background: linear-gradient(35deg, #494949, #313131);
-    font-size: 1rem;
-    color: white;
-    padding: 1rem 3rem;
-    border: none;
-    border-radius: 1rem;
-    outline: none;
-  }
-  svg {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(100%, -50%);
-    color: white;
-  }
-  @media (max-width: 820px) {
-    margin: 0px;
-    transform: translateX(0);
-  }
-`;
+
 export default Search;

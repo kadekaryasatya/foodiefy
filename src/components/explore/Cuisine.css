@@ -1,0 +1,75 @@
+/*
+ * cuisines
+ */
+.cuisines {
+  padding: 30px;
+}
+.cuisines__label {
+  margin-bottom: 8px;
+}
+
+/*
+ * cuisines item
+ */
+
+.cuisines-item__thumbnail {
+  align-items: center;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+  width: 100%;
+}
+
+.cuisines-item__title p {
+  color: var(--text-color);
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.cuisines-item__title p:hover {
+  color: #34d9a2;
+}
+
+.cuisines-item__title a {
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.cuisines-item__source {
+  color: var(--date-color);
+}
+
+/* 
+   Responsive
+*/
+
+@media screen and (min-width: 600px) {
+  .cuisines-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cuisines-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cuisines {
+    max-width: 1500px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .cuisines-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+}

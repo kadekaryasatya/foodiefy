@@ -42,7 +42,7 @@ function Hero() {
                 aria-describedby='basic-addon2'
               ></input>
               <div className='input-group-append'>
-                <button className='btn btn-outline-secondary' type='button'>
+                <button className='btn btn-outline-secondary'>
                   Search <FaAngleRight></FaAngleRight>
                 </button>
               </div>

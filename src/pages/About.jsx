@@ -30,9 +30,7 @@ function About() {
 
         <div className='cooking'>
           <img className='cooking__image' src='../cooking.jpg' alt='recipe' />
-          <h4>
-            <span>Our Mission</span> is helps users to manage and search for recipes from around the world
-          </h4>
+          <h4>Our Mission is helps users to manage and search recipes around the world</h4>
         </div>
 
         <div className='our-team'>

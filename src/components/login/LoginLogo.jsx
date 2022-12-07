@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../../public/images/Logo.jpeg';
-import TaglineLogin from './TaglineLogin';
 import LabelLogin from './LabelLogin';
 
 function LoginLogo() {

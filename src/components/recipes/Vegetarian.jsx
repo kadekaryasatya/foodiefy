@@ -10,7 +10,7 @@ function Vegetarian() {
   }, []);
 
   const getVegetarian = async () => {
-    const api = await fetch('https://api.spoonacular.com/recipes/random?apiKey=39b73cc197374a43b03259265314bf57&tags=vegetarian&number=4');
+    const api = await fetch('https://api.spoonacular.com/recipes/random?apiKey=0f992e4eda01432b9170203d0eae7eab&tags=vegetarian&number=4');
     const data = await api.json();
     console.log(data);
     setVegetarian(data.recipes);

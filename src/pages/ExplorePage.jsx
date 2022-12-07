@@ -1,14 +1,20 @@
 import React from 'react';
-import Category from '../components/explore/CuisinesNav';
-import Pages from '../components/explore/Pages';
+import Category from '../components/explore/Category';
+import Header from '../components/explore/Header';
 import Search from '../components/explore/Search';
+import Footer from '../components/layout/Footer';
+import Popular from '../components/recipes/Popular';
+import Vegetarian from '../components/recipes/Vegetarian';
 
 function Explore() {
   return (
-    <div>
-      <Search></Search>
+    <section>
+      <Header></Header>
       <Category></Category>
-    </div>
+      <Popular></Popular>
+      <Vegetarian></Vegetarian>
+      <Footer></Footer>
+    </section>
   );
 }
 

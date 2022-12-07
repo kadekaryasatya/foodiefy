@@ -99,6 +99,9 @@ class App extends React.Component {
             <Route path='/about' element={<About />} />
             <Route path='/recipe/:id' element={<Detail />} />
             <Route path='/add' element={<AddPage />} />
+            <Route path='/explore' element={<Explore />} />
+            <Route path='/cuisines/:type' element={<Cuisine />} />
+            <Route path='/searched/:search' element={<Searched />} />
           </Routes>
         </main>
       </div>

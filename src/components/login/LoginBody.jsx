@@ -1,6 +1,5 @@
 import React from 'react';
 import LoginForm from './LoginForm';
-import LoginButton from './LoginButton';
 import TitleLogin from './TitleLogin';
 import CreateAccount from './CreateAccount';
 
