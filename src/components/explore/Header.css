@@ -3,6 +3,12 @@
 */
 
 .hero-explore {
+  border-style: solid;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: #b9cac4;
   background-image: url('../../background.jpg');
   width: 100%;
   min-height: 350px;
@@ -17,7 +23,7 @@
 
 .hero-explore__title {
   color: #1b1c57;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 30px;
 }
 
@@ -32,8 +38,8 @@
   }
   .hero-explore__title {
     color: #1b1c57;
-    font-weight: 500;
-    font-size: 40px;
+    font-weight: 600;
+    font-size: 45px;
   }
 
   .hero-explore__inner {

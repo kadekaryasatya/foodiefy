@@ -36,6 +36,7 @@
 }
 
 .about__features h4 {
+  font-size: 18px;
   margin-bottom: 20px;
   font-weight: 500;
 }
@@ -74,12 +75,25 @@
  * cooking
  */
 .cooking {
+  background-color: #f9f9f9;
+  background-image: url('../explore-background.jpg');
+  width: 100%;
+  min-height: 350px;
+  background-size: 100% 100%;
+  background-position: center;
   padding: 30px;
+  margin-bottom: 10px;
 }
 
 .cooking span {
   font-size: large;
   font-weight: bold;
+}
+
+.cooking h5 {
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
 }
 .cooking h4 {
   justify-content: center;
@@ -90,16 +104,18 @@
 }
 
 .cooking__image {
-  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 100%;
   height: auto;
+  margin-bottom: 20px;
+  border-radius: 20px;
 }
 
 /*
  * about our-team
  */
 .our-team {
-  padding: 20px;
+  padding: 30px;
   background-color: #f9f9f9;
 }
 
@@ -121,41 +137,53 @@
 }
 
 .dek-arya {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
   background-color: var(--background);
   align-items: center;
   text-align: center;
   padding: 30px 20px;
-  height: 200px;
+  height: 300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
 }
 
 .zulham {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
   background-color: var(--background);
   align-items: center;
   text-align: center;
   padding: 30px 20px;
-  height: 200px;
+  height: 300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
 }
 
 .dede-oka {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
   background-color: var(--background);
   align-items: center;
   text-align: center;
   padding: 30px 20px;
-  height: 200px;
+  height: 300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
 }
 
 .tri {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
   background-color: var(--background);
   align-items: center;
   text-align: center;
   padding: 30px 20px;
-  height: 200px;
+  height: 300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
 }
@@ -196,16 +224,16 @@
   }
 
   .cooking {
+    gap: 50px;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    max-width: 1000px;
+    min-height: 500px;
     display: flex;
-    gap: 50px;
   }
 
   .cooking__image {
-    max-width: 600px;
+    max-width: 500px;
   }
 
   .our-team__body {
@@ -238,5 +266,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
+  }
+
+  .cooking__image {
+    max-width: 700px;
   }
 }

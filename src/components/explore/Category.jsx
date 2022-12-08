@@ -25,7 +25,7 @@ const Category = () => {
         <h4>African</h4>
       </NavLink>
       <NavLink className='category-nav' to={'/cuisines/Korean'}>
-        <img src='/images/korean.jpeg' className='category-img' alt='chinese'></img>
+        <img src='/images/korean.jpeg' className='category-img' alt='korean'></img>
         <h4>Korean</h4>
       </NavLink>
     </div>

@@ -22,17 +22,18 @@ function Cuisine() {
     if (cuisineLocal) {
       setCuisine(JSON.parse(cuisineLocal));
     } else {
-      const res = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=25fdc99073454df1a6207314399886ee&number=2&cuisine=${names}`);
+      const res = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=25fdc99073454df1a6207314399886ee&number=1&cuisine=${names}`);
       const data = await res.json();
       localStorage.setItem(`${names}`, JSON.stringify(data.results));
       setCuisine(data.results);
-      console.log(data);
+      console.log(res);
     }
   };
 
   return (
     <section>
       <Header></Header>
+
       <Category></Category>
       <div className='cuisines'>
         <h3 className='cuisines__label'>Your Picks</h3>

@@ -17,13 +17,13 @@ function Hero() {
       <div className='row w-100 justity-content-center'>
         <div className='col-md-6 hero-text'>
           <h2 className='hero-title'>
-            find recipe <br />
+            Manage recipe <br />
             live <span>your dreams</span>
             <br />
             easily here
           </h2>
           <p className='hero-desc text-secondary mt-2'>
-            Everything you need about finding recipe will be here, <br />
+            Everything you need about manage recipe will be here, <br />
             where it will be easier for you
           </p>
 
