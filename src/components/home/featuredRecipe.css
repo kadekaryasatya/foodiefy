@@ -48,6 +48,7 @@
 .featured-section .btn-featured:hover {
   color: #fff;
   background-color: #10b981;
+  border: 1px solid #10b981;
 }
 
 .featured-section .swiper-button-next,
@@ -72,6 +73,18 @@
   font-size: 0.95rem;
 }
 
+.featured-section .btn-featured-recipe {
+  font-size: 0.8rem;
+  border-radius: 16px;
+  padding: 5px 12px;
+  background-color: #10b981;
+  border: none;
+}
+
+.featured-section .btn-featured-recipe:hover {
+  background-color: #10b981;
+  transform: translateY(-3px);
+}
 .featured-section .swiper {
   overflow-x: clip !important;
   overflow: visible;

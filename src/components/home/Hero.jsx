@@ -13,7 +13,7 @@ function Hero() {
   };
 
   return (
-    <div className='container hero-section pt-4 mt-3 w-100'>
+    <div className='container hero-section pt-4 mt-4 w-100'>
       <div className='row w-100 justity-content-center'>
         <div className='col-md-6 hero-text'>
           <h2 className='hero-title'>
