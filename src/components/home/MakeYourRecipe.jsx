@@ -1,6 +1,11 @@
 import React from "react";
 import "./makeyourrecipe.css";
-import { FaNutritionix, FaHeartbeat, FaClipboardList, FaCoffee   } from "react-icons/fa";
+import {
+  FaNutritionix,
+  FaHeartbeat,
+  FaClipboardList,
+  FaCoffee,
+} from "react-icons/fa";
 
 function MakeRecipe() {
   return (
@@ -18,13 +23,19 @@ function MakeRecipe() {
               </p>
             </div>
             <div className="col-6 text-feature">
-              <p><FaHeartbeat/> Health Information</p>
+              <p>
+                <FaHeartbeat /> Health Information
+              </p>
             </div>
             <div className="col-6 text-feature">
-              <p><FaClipboardList/> Price Data</p>
+              <p>
+                <FaClipboardList /> Price Data
+              </p>
             </div>
             <div className="col-6 text-feature">
-              <p><FaCoffee/> Cooking Tips</p>
+              <p>
+                <FaCoffee /> Cooking Tips
+              </p>
             </div>
           </div>
         </div>
@@ -32,7 +43,7 @@ function MakeRecipe() {
           <img
             className="img-fluid"
             style={{ borderRadius: "20px" }}
-            width={300}
+            width={350}
             src="https://pasjabar.com/wp-content/uploads/2022/12/Screenshot-2022-12-01-155132.jpg"
             alt=""
           />

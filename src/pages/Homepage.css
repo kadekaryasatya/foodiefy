@@ -1,0 +1,23 @@
+@media (max-width: 992px) {
+  .img-hero {
+    display: none;
+  }
+  .hero-text {
+    width: 100% !important;
+  }
+  .navbar .navbar-collapse {
+    background: white;
+    position: absolute;
+    top: calc(0% + 90px);
+    width: 250px;
+    right: calc(0% + 40px);
+    padding: 1rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 550px) {
+    .featured-section .swiper-button-next, .featured-section .swiper-button-prev{
+        top:-80px !important;
+    }
+}

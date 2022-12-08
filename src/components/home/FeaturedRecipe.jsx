@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./featuredRecipe.css";
-// Import Swiper React components
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import "swiper/css";
@@ -10,6 +10,16 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
 function FeaturedRecipe() {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(max-width: 992px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 992px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
+
   return (
     <>
       <div className="container featured-section">
@@ -17,20 +27,20 @@ function FeaturedRecipe() {
           our recomendation
         </span>
         <div className="row mb-3">
-          <div className="col-4">
+          <div className="col-lg-4 col-sm-12 col-md-12">
             <h3 className="featured-title">Featured Recipe</h3>
           </div>
-          <div className="col-4">
+          <div className="col-lg-4 col-sm-12 col-md-12">
             <Button className="btn-featured mx-2 active-btn">Rice</Button>
             <Button className="btn-featured mx-2">Rice</Button>
             <Button className="btn-featured mx-2">Rice</Button>
             <Button className="btn-featured mx-2">Rice</Button>
           </div>
-          <div className="col-4"></div>
+          <div className="col-lg-4 col-sm-12 col-md-12"></div>
         </div>
         <Swiper
           spaceBetween={40}
-          slidesPerView={4}
+          slidesPerView={matches ? "2" : "4"}
           navigation={true}
           modules={[Navigation]}
         >
@@ -153,5 +163,4 @@ function FeaturedRecipe() {
     </>
   );
 }
-
 export default FeaturedRecipe;
