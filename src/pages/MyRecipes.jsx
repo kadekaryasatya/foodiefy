@@ -57,9 +57,7 @@ function MyRecipes() {
     <section>
       <div className='hero'>
         <div className='hero__inner'>
-          <h1 className='hero__title'>
-            Create Your<span> Own </span>Recipes
-          </h1>
+          <h1 className='hero__title'>Create Your Own Recipes</h1>
           <Link to='/add'>
             <button className='button-add' type='button'>
               + Add Recipes

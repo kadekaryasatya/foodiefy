@@ -1,6 +1,7 @@
 .subscribe-section {
-  background: rgba(16, 185, 129, 0.2);
+  background-image: url('../../subscribe.jpeg');
   border-radius: 32px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .subscribe-section h2 {
   font-weight: 600;
@@ -35,7 +36,11 @@
   font-size: 14px;
   border-radius: 32px;
   background: #10b981;
-  color: #e0e3eb;
+  color: #ffffff;
   z-index: 5;
   padding: 0.5rem 0.75rem;
+}
+
+.subscribe-section button:hover {
+  background: #102fb9;
 }

@@ -1,172 +1,59 @@
-import React from "react";
-import "./featuredRecipe.css";
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import './featuredRecipe.css';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation} from 'swiper';
-import "swiper/css";
-import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 function FeaturedRecipe() {
+  const [popular, setPopular] = useState([]);
+
+  useEffect(() => {
+    getPopular();
+  }, []);
+
+  const getPopular = async () => {
+    const api = await fetch('https://api.spoonacular.com/recipes/random?apiKey=0f992e4eda01432b9170203d0eae7eab&number=6');
+    const data = await api.json();
+    console.log(data);
+    setPopular(data.recipes);
+  };
+
   return (
     <>
-      <div className="container featured-section">
-        <span className="our-recomend position-relative">our recomendation</span>
-        <div className="row mb-3">
-          <div className="col-4">
-            <h3 className="featured-title">Featured Recipe</h3>
+      <div className='container featured-section'>
+        <span className='our-recomend position-relative'>our recomendation</span>
+        <div className='row mb-3'>
+          <div className='col-4'>
+            <h3 className='featured-title'>Featured Recipe</h3>
           </div>
-          <div className="col-4">
-            <Button className="btn-featured mx-2 active-btn">Rice</Button>
-            <Button className="btn-featured mx-2">Rice</Button>
-            <Button className="btn-featured mx-2">Rice</Button>
-            <Button className="btn-featured mx-2">Rice</Button>
 
-
-          </div>
-          <div className="col-4"></div>
+          <div className='col-4'></div>
         </div>
-        <Swiper
-          spaceBetween={25}
-          slidesPerView={4}
-          navigation={true} modules={[Navigation]}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
-          <SwiperSlide>
-            <Card style={{ border: "none" }}>
-              <Card.Img
-                variant="top"
-                src="https://pasjabar.com/wp-content/uploads/2022/12/Screenshot-2022-12-01-155132.jpg"
-              />
-              <Card.Body style={{ padding: "0.5rem 0 0 0" }}>
-                <Card.Title>Nasi Goreng</Card.Title>
-                <Card.Text>
-                  Pada salah satu tahap pemrosesan hasil panen padi, gabah
-                  ditumbuk dengan lesung atau digiling sehingga bagian luarnya
-                  terlepas dari isinya.
-                </Card.Text>
-                <Button
-                  size="sm"
-                  style={{ backgroundColor: "rgb(16,185,129)" }}
-                >
-                  check recipe
-                </Button>
-              </Card.Body>
-            </Card>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card style={{ border: "none" }}>
-              <Card.Img
-                variant="top"
-                src="https://pasjabar.com/wp-content/uploads/2022/12/Screenshot-2022-12-01-155132.jpg"
-              />
-              <Card.Body style={{ padding: "0.5rem 0 0 0" }}>
-                <Card.Title>Nasi Gorengaaa</Card.Title>
-                <Card.Text>
-                  Pada salah satu tahap pemrosesan hasil panen padi, gabah
-                  ditumbuk dengan lesung atau digiling sehingga bagian luarnya
-                  terlepas dari isinya.
-                </Card.Text>
-                <Button
-                  size="sm"
-                  style={{ backgroundColor: "rgb(16,185,129)" }}
-                >
-                  check recipe
-                </Button>
-              </Card.Body>
-            </Card>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card style={{ border: "none" }}>
-              <Card.Img
-                variant="top"
-                src="https://pasjabar.com/wp-content/uploads/2022/12/Screenshot-2022-12-01-155132.jpg"
-              />
-              <Card.Body style={{ padding: "0.5rem 0 0 0" }}>
-                <Card.Title>Nasi Gorengdsadsa</Card.Title>
-                <Card.Text>
-                  Pada salah satu tahap pemrosesan hasil panen padi, gabah
-                  ditumbuk dengan lesung atau digiling sehingga bagian luarnya
-                  terlepas dari isinya.
-                </Card.Text>
-                <Button
-                  size="sm"
-                  style={{ backgroundColor: "rgb(16,185,129)" }}
-                >
-                  check recipe
-                </Button>
-              </Card.Body>
-            </Card>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card style={{ border: "none" }}>
-              <Card.Img
-                variant="top"
-                src="https://pasjabar.com/wp-content/uploads/2022/12/Screenshot-2022-12-01-155132.jpg"
-              />
-              <Card.Body style={{ padding: "0.5rem 0 0 0" }}>
-                <Card.Title>Nasi sadaGoreng</Card.Title>
-                <Card.Text>
-                  Pada salah satu tahap pemrosesan hasil panen padi, gabah
-                  ditumbuk dengan lesung atau digiling sehingga bagian luarnya
-                  terlepas dari isinya.
-                </Card.Text>
-                <Button
-                  size="sm"
-                  style={{ backgroundColor: "rgb(16,185,129)" }}
-                >
-                  check recipe
-                </Button>
-              </Card.Body>
-            </Card>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card style={{ border: "none" }}>
-              <Card.Img
-                variant="top"
-                src="https://pasjabar.com/wp-content/uploads/2022/12/Screenshot-2022-12-01-155132.jpg"
-              />
-              <Card.Body style={{ padding: "0.5rem 0 0 0" }}>
-                <Card.Title>Nasi Goreng</Card.Title>
-                <Card.Text>
-                  Pada salah satu tahap pemrosesan hasil panen padi, gabah
-                  ditumbuk dengan lesung atau digiling sehingga bagian luarnya
-                  terlepas dari isinya.
-                </Card.Text>
-                <Button
-                  size="sm"
-                  style={{ backgroundColor: "rgb(16,185,129)" }}
-                >
-                  check recipe
-                </Button>
-              </Card.Body>
-            </Card>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card style={{ border: "none" }}>
-              <Card.Img
-                variant="top"
-                src="https://pasjabar.com/wp-content/uploads/2022/12/Screenshot-2022-12-01-155132.jpg"
-              />
-              <Card.Body style={{ padding: "0.5rem 0 0 0" }}>
-                <Card.Title>Nasi Goreng</Card.Title>
-                <Card.Text>
-                  Pada salah satu tahap pemrosesan hasil panen padi, gabah
-                  ditumbuk dengan lesung atau digiling sehingga bagian luarnya
-                  terlepas dari isinya.
-                </Card.Text>
-                <Button
-                  size="sm"
-                  style={{ backgroundColor: "rgb(16,185,129)" }}
-                >
-                  check recipe
-                </Button>
-              </Card.Body>
-            </Card>
-          </SwiperSlide>
+        <Swiper spaceBetween={25} slidesPerView={4} navigation={true} modules={[Navigation]} onSlideChange={() => console.log('slide change')} onSwiper={(swiper) => console.log(swiper)}>
+          {popular.map((recipe) => {
+            return (
+              <SwiperSlide key={recipe.id}>
+                <Card style={{ border: 'none' }}>
+                  <Card.Img variant='top' src={recipe.image} alt={recipe.title} />
+                  <Card.Body style={{ padding: '0.5rem 0 0 0' }}>
+                    <Card.Title> {recipe.title}</Card.Title>
+                    <Card.Text>{recipe.sourceName}</Card.Text>
+                    <Link to={`/recipe/${recipe.id}`}>
+                      <Button size='sm' style={{ backgroundColor: 'rgb(16,185,129)' }}>
+                        Check Recipe
+                      </Button>
+                    </Link>
+                  </Card.Body>
+                </Card>
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
     </>

@@ -47,10 +47,11 @@
   font-size: 14px;
   border-radius: 32px;
   background: #10b981;
-  color: #e0e3eb;
+  color: #ffffff;
   z-index: 5;
   padding: 0.5rem 0.75rem;
 }
+
 .hero-section .input-group-append {
   margin-left: -15px !important;
 }
