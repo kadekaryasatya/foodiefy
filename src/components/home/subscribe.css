@@ -1,13 +1,23 @@
 .subscribe-section {
+  margin-top: 8rem;
+  margin-bottom: 10rem;
   background-image: url('../../subscribe.jpeg');
   border-radius: 32px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .subscribe-section h2 {
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
+  text-transform: capitalize;
+  color: var(--text-color);
+  text-shadow: -1px 0px 0px var(--text-color), 1px 0px 0px var(--text-color), 0px -1px 0px var(--text-color), 0px 1px 0px var(--text-color);
+}
+
+.subscribe-section p {
+  font-size: 18px;
   color: #1b1c57;
 }
+
 .subscribe-section .icon-loc {
   position: absolute;
   z-index: 6;
