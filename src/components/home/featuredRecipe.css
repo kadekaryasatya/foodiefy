@@ -1,6 +1,6 @@
 .featured-section {
-  margin-top: 20rem !important;
-  margin-bottom: 15rem;
+  margin-top: 15rem !important;
+  margin-bottom: 10rem;
 }
 .featured-section .card-img-top {
   border-radius: 12px;
@@ -41,17 +41,15 @@
   padding: 6px 20px;
 }
 .featured-section .btn-featured.active-btn{
-  background-color: #10b98160 !important;
-  color: #10b981 !important;
+  background-color: #10b981 !important;
+  color: #fff !important;
   border: none !important;
 }
 .featured-section .btn-featured:hover{
   color: #fff;
   background-color: #10b981;
+  border : 1px solid #10b981;
 }
-
-
-
 
 .featured-section .swiper-button-next,
 .featured-section .swiper-button-prev {
@@ -75,7 +73,20 @@
   font-size: 0.95rem;
 }
 
+.featured-section .btn-featured-recipe{
+  font-size: 0.8rem;
+  border-radius: 16px;
+  padding: 5px 12px;
+  background-color: #10b981;
+  border: none;
+}
+
+.featured-section .btn-featured-recipe:hover{
+  background-color: #10b981;
+  transform: translateY(-3px);
+}
 .featured-section .swiper {
   overflow-x: clip !important;
   overflow: visible;
 }
+

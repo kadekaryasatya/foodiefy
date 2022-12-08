@@ -23,8 +23,17 @@
     0px -1px 0px var(--text-color), 0px 1px 0px var(--text-color);
 }
 .make-recipe-section .mkrecipe-title2 {
-    font-weight: 600;
-    font-size: 18px;
-    text-transform: capitalize;
-    color: var(--text-color);
-  }
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: var(--text-color);
+}
+
+.make-recipe-section .text-feature{
+  font-size: 14px;
+}
+.make-recipe-section .text-feature svg {
+  font-size: 20px;
+  color: #f59e0b;
+  margin-right: 0.5rem;
+}

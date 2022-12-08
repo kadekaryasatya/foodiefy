@@ -2,7 +2,7 @@ import React from "react";
 import "./featuredRecipe.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation} from 'swiper';
+import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -13,7 +13,9 @@ function FeaturedRecipe() {
   return (
     <>
       <div className="container featured-section">
-        <span className="our-recomend position-relative">our recomendation</span>
+        <span className="our-recomend position-relative">
+          our recomendation
+        </span>
         <div className="row mb-3">
           <div className="col-4">
             <h3 className="featured-title">Featured Recipe</h3>
@@ -23,17 +25,14 @@ function FeaturedRecipe() {
             <Button className="btn-featured mx-2">Rice</Button>
             <Button className="btn-featured mx-2">Rice</Button>
             <Button className="btn-featured mx-2">Rice</Button>
-
-
           </div>
           <div className="col-4"></div>
         </div>
         <Swiper
-          spaceBetween={25}
+          spaceBetween={40}
           slidesPerView={4}
-          navigation={true} modules={[Navigation]}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+          navigation={true}
+          modules={[Navigation]}
         >
           <SwiperSlide>
             <Card style={{ border: "none" }}>
@@ -48,10 +47,7 @@ function FeaturedRecipe() {
                   ditumbuk dengan lesung atau digiling sehingga bagian luarnya
                   terlepas dari isinya.
                 </Card.Text>
-                <Button
-                  size="sm"
-                  style={{ backgroundColor: "rgb(16,185,129)" }}
-                >
+                <Button size="sm" className="btn-featured-recipe">
                   check recipe
                 </Button>
               </Card.Body>
@@ -70,10 +66,7 @@ function FeaturedRecipe() {
                   ditumbuk dengan lesung atau digiling sehingga bagian luarnya
                   terlepas dari isinya.
                 </Card.Text>
-                <Button
-                  size="sm"
-                  style={{ backgroundColor: "rgb(16,185,129)" }}
-                >
+                <Button size="sm" className="btn-featured-recipe">
                   check recipe
                 </Button>
               </Card.Body>
@@ -92,10 +85,7 @@ function FeaturedRecipe() {
                   ditumbuk dengan lesung atau digiling sehingga bagian luarnya
                   terlepas dari isinya.
                 </Card.Text>
-                <Button
-                  size="sm"
-                  style={{ backgroundColor: "rgb(16,185,129)" }}
-                >
+                <Button size="sm" className="btn-featured-recipe">
                   check recipe
                 </Button>
               </Card.Body>
@@ -114,10 +104,7 @@ function FeaturedRecipe() {
                   ditumbuk dengan lesung atau digiling sehingga bagian luarnya
                   terlepas dari isinya.
                 </Card.Text>
-                <Button
-                  size="sm"
-                  style={{ backgroundColor: "rgb(16,185,129)" }}
-                >
+                <Button size="sm" className="btn-featured-recipe">
                   check recipe
                 </Button>
               </Card.Body>
@@ -136,10 +123,7 @@ function FeaturedRecipe() {
                   ditumbuk dengan lesung atau digiling sehingga bagian luarnya
                   terlepas dari isinya.
                 </Card.Text>
-                <Button
-                  size="sm"
-                  style={{ backgroundColor: "rgb(16,185,129)" }}
-                >
+                <Button size="sm" className="btn-featured-recipe">
                   check recipe
                 </Button>
               </Card.Body>
@@ -158,10 +142,7 @@ function FeaturedRecipe() {
                   ditumbuk dengan lesung atau digiling sehingga bagian luarnya
                   terlepas dari isinya.
                 </Card.Text>
-                <Button
-                  size="sm"
-                  style={{ backgroundColor: "rgb(16,185,129)" }}
-                >
+                <Button size="sm" className="btn-featured-recipe">
                   check recipe
                 </Button>
               </Card.Body>
