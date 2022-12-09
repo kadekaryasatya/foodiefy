@@ -33,12 +33,3 @@
   margin: 0.75rem 0;
 }
 
-@media screen and (max-width: 600px) {
-  .footer-resp {
-    flex-direction: column;
-  }
-
-  .footer-text {
-    margin-bottom: 50px;
-  }
-}

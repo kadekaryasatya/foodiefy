@@ -1,6 +1,5 @@
 .featured-section {
-  margin-top: 8rem;
-  margin-bottom: 5rem;
+  margin: 5rem 0;
 }
 .featured-section .card-img-top {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -89,6 +88,13 @@
 .featured-section .swiper {
   overflow-x: clip !important;
   overflow: visible;
+}
+
+.featured-section .card-title{
+  width:100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
 }
 
 @media screen and (min-width: 990px) {

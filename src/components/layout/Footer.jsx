@@ -1,27 +1,27 @@
-import React from 'react';
-import './Footer.css';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import React from "react";
+import "./Footer.css";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='footer container mt-5 w-100'>
-      <div className='footer-resp row w-100 justify-content-center'>
-        <div className='footer-text col-6'>
+    <div className="footer container mt-5 w-100">
+      <div className="footer-resp row w-100 justify-content-center">
+        <div className="footer-text col-lg-6 mb-3 col-sm-12 col-md-12">
           <h3>Foodiefy</h3>
-          <p className='text-secondary'>
+          <p className="text-secondary">
             Everything you need about finding <br />
             recipe will be here, where it will be easier <br />
             for you
           </p>
-          <div className='icon-list'>
+          <div className="icon-list">
             <FaFacebookF></FaFacebookF>
             <FaTwitter></FaTwitter>
             <FaInstagram></FaInstagram>
           </div>
         </div>
-        <div className='col-6 footer-link'>
-          <div className='row'>
-            <div className='col-4'>
+        <div className="col-lg-6 col-sm-12 col-md-12 footer-link">
+          <div className="row">
+            <div className="col-4">
               <h4>Recipe</h4>
               <ul>
                 <li>Popular</li>
@@ -29,7 +29,7 @@ const Footer = () => {
                 <li>Random</li>
               </ul>
             </div>
-            <div className='col-4'>
+            <div className="col-4">
               <h4>Menu</h4>
               <ul>
                 <li>Home</li>
@@ -37,7 +37,7 @@ const Footer = () => {
                 <li>About Us</li>
               </ul>
             </div>
-            <div className='col-4'>
+            <div className="col-4">
               <h4>Contact</h4>
               <ul>
                 <li>Foodiefy team</li>
