@@ -24,16 +24,27 @@ function FeaturedRecipe() {
     setPopular(data.recipes);
   };
 
+  const [matches, setMatches] = useState(window.matchMedia('(max-width: 992px)').matches);
+
+  useEffect(() => {
+    window.matchMedia('(max-width: 992px)').addEventListener('change', (e) => setMatches(e.matches));
+  }, []);
+
   return (
     <>
       <div className='container featured-section'>
         <span className='our-recomend position-relative'>our recomendation</span>
         <div className='row mb-3'>
-          <div className='col-4'>
+          <div className='col-lg-4 col-sm-12 col-md-12'>
             <h3 className='featured-title'>Featured Recipe</h3>
           </div>
-
-          <div className='col-4'></div>
+          <div className='col-lg-4 col-sm-12 col-md-12'>
+            <Button className='btn-featured mx-2 active-btn'>Rice</Button>
+            <Button className='btn-featured mx-2'>Rice</Button>
+            <Button className='btn-featured mx-2'>Rice</Button>
+            <Button className='btn-featured mx-2'>Rice</Button>
+          </div>
+          <div className='col-lg-4 col-sm-12 col-md-12'></div>
         </div>
         <Swiper spaceBetween={25} slidesPerView={4} navigation={true} modules={[Navigation]} onSlideChange={() => console.log('slide change')} onSwiper={(swiper) => console.log(swiper)}>
           {popular.map((recipe) => {
@@ -59,5 +70,4 @@ function FeaturedRecipe() {
     </>
   );
 }
-
 export default FeaturedRecipe;

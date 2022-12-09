@@ -79,11 +79,13 @@
   padding: 5px 12px;
   background-color: #10b981;
   border: none;
+  transition: all 0.5s;
 }
 
 .featured-section .btn-featured-recipe:hover {
   background-color: #10b981;
   transform: translateY(-3px);
+
 }
 .featured-section .swiper {
   overflow-x: clip !important;

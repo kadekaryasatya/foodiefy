@@ -1,6 +1,6 @@
 import React from 'react';
 import './makeyourrecipe.css';
-import { Link } from 'react-router-dom';
+import { FaNutritionix, FaHeartbeat, FaClipboardList, FaCoffee } from 'react-icons/fa';
 
 function MakeRecipe() {
   return (

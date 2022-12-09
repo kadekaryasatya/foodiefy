@@ -50,7 +50,7 @@ function Hero() {
           </form>
         </div>
 
-        <div className='col-md-6'>
+        <div className='col-md-6 img-hero'>
           <img src='/hero-img.jpg' className='img-fluid' alt='Hero-Imagefood'></img>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Homepage.css'
 import FeaturedRecipe from '../components/home/FeaturedRecipe';
 import Hero from '../components/home/Hero';
 import MakeRecipe from '../components/home/MakeYourRecipe';
