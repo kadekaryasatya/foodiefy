@@ -6,52 +6,67 @@
   text-align: center;
 }
 
-.note-input {
-  margin-left: 5rem;
-  margin-right: 5rem;
+.recipe-input__image {
+  padding: 20px;
+  height: 300px;
+}
+
+.recipe-input__image-box {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recipe-input {
+  margin-left: 3rem;
+  margin-right: 3rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.note-input input,
-.note-input textarea {
+.recipe-input input,
+.recipe-input textarea {
   display: block;
   width: 100%;
 }
 
-.note-input__title {
+.recipe-input__title {
   font-weight: bold;
 }
 
-.note-input__title__char-limit {
+.recipe-input__title__char-limit {
   font-size: 14px;
   text-align: right;
   color: var(--date-color);
 }
 
-.note-input__body {
+.recipe-input__body {
   min-height: 175px;
 }
 
-.note-input button {
+.recipe-input button {
+  margin-top: 10px;
   display: block;
-  width: 100%;
+  width: 100px;
   padding: 8px;
-  background-color: transparent;
+  background-color: #7acbbb;
   font-family: 'Inter', sans-serif;
   color: var(--text-color);
   border: 1px solid var(--date-color);
-  border-radius: 4px;
+  border-radius: 20px;
   font-weight: bold;
   cursor: pointer;
 }
 
-.note-input button:hover {
-  color: #65d317;
+.recipe-input button:hover {
+  color: #edf2ea;
 }
 
 textarea {
-  height: 150px;
+  height: 250px;
 }
 
 input,
@@ -59,14 +74,39 @@ textarea {
   padding: 12px;
   margin: 12px 0;
   font-family: 'Inter', sans-serif;
-  background-color: transparent;
+  background-color: #dafff3;
   color: var(--text-color);
-  border: 1px solid var(--date-color);
-  border-radius: 4px;
+  border: 1px solid #34d9a2;
+  border-radius: 20px;
 }
 
 input::placeholder,
 textarea::placeholder {
   color: var(--date-color);
   font-weight: bold;
+}
+
+/* 
+   Responsive
+*/
+
+@media screen and (min-width: 1000px) {
+  .recipe-input {
+    padding: 30px;
+    display: flex;
+  }
+
+  .recipe-input__image {
+    width: 400px;
+    height: 450px;
+  }
+
+  .recipe-input__image-box {
+    width: 400px;
+  }
+
+  .recipe-input__form {
+    width: 100%;
+    margin-left: 50px;
+  }
 }

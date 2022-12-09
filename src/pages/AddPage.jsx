@@ -15,7 +15,7 @@ function AddPage() {
     e.preventDefault();
 
     /**
-     * Addnote
+     * Addrecipe
      */
     addNote({ title, body }).then((res) => {
       if (!res.error) {
@@ -27,11 +27,18 @@ function AddPage() {
   return (
     <div className='form-input' id='form-input'>
       <h2>Add Recipe</h2>
-      <form className='note-input' onSubmit={handleSubmit}>
-        <input className='note-input__title' type='text' placeholder='Recipe Title' value={title} id='title' onChange={onTitleChange} required />
-        <p className='note-input__title__char-limit'>{limit - title.length} remaining character</p>
-        <textarea placeholder='Instruction or Ingredient' value={body} onChange={onBodyChange} required />
-        <button type='submit'>Add</button>
+      <form className='recipe-input' onSubmit={handleSubmit}>
+        <div className='recipe-input__image-box'>
+          <img className='recipe-input__image' src='../detail.png' alt='recipe' />
+        </div>
+        <div className='recipe-input__form'>
+          <h4>Title</h4>
+          <input className='recipe-input__title' type='text' placeholder='Title of Recipe' value={title} id='title' onChange={onTitleChange} required />
+          <p className='recipe-input__title__char-limit'>{limit - title.length} remaining character</p>
+          <h4>Description</h4>
+          <textarea placeholder='Instruction or Ingredient' value={body} onChange={onBodyChange} required />
+          <button type='submit'>Add</button>\
+        </div>
       </form>
     </div>
   );

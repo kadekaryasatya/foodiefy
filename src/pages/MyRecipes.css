@@ -13,6 +13,7 @@
   font-size: 14px;
   border: 1px solid var(--date-color);
   border-radius: 32px !important;
+  background-color: transparent;
 }
 
 /* 
