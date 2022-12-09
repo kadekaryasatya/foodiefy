@@ -1,10 +1,11 @@
 import React from 'react';
-import './Homepage.css'
+import './Homepage.css';
 import FeaturedRecipe from '../components/home/FeaturedRecipe';
 import Hero from '../components/home/Hero';
 import MakeRecipe from '../components/home/MakeYourRecipe';
 import Subscribe from '../components/home/Subscribe';
 import Footer from '../components/layout/Footer';
+import BottomImage from '../components/layout/BottomImage';
 
 function HomePage() {
   return (
@@ -13,6 +14,7 @@ function HomePage() {
       <FeaturedRecipe></FeaturedRecipe>
       <MakeRecipe></MakeRecipe>
       <Subscribe></Subscribe>
+
       <Footer></Footer>
     </div>
   );

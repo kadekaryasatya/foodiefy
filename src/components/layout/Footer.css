@@ -1,35 +1,44 @@
 .footer {
-  color: #1B1C57;
+  color: #1b1c57;
   width: 100%;
   margin: 3rem auto;
   background-color: transparent;
 }
 
-.footer h3{
-    font-size: 24px;  
-    font-weight: bold;
-    color: #1B1C57;
+.footer h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1b1c57;
 }
 
-.footer .icon-list{
+.footer .icon-list {
   font-size: 1.75rem;
 }
-.footer .icon-list svg{
+.footer .icon-list svg {
   margin: 0 0.5rem;
 }
 
-.footer h4{
+.footer h4 {
   font-size: 18px;
   font-weight: 600;
 }
 
-.footer .footer-link ul{
+.footer .footer-link ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.footer .footer-link ul li{
+.footer .footer-link ul li {
   margin: 0.75rem 0;
 }
 
+@media screen and (max-width: 600px) {
+  .footer-resp {
+    flex-direction: column;
+  }
+
+  .footer-text {
+    margin-bottom: 50px;
+  }
+}

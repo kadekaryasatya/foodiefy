@@ -1,5 +1,5 @@
 .featured-section {
-  margin-top: 22rem !important;
+  margin-top: 8rem;
   margin-bottom: 5rem;
 }
 .featured-section .card-img-top {
@@ -85,9 +85,14 @@
 .featured-section .btn-featured-recipe:hover {
   background-color: #10b981;
   transform: translateY(-3px);
-
 }
 .featured-section .swiper {
   overflow-x: clip !important;
   overflow: visible;
+}
+
+@media screen and (min-width: 990px) {
+  .featured-section {
+    margin-top: 22rem;
+  }
 }

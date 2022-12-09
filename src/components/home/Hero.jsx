@@ -15,7 +15,7 @@ function Hero() {
   return (
     <div className='container hero-section pt-4 mt-4 w-100'>
       <div className='row w-100 justity-content-center'>
-        <div className='col-md-6 hero-text'>
+        <div className='col-md-5 hero-text'>
           <h2 className='hero-title'>
             Manage recipe <br />
             live <span>your dreams</span>
@@ -28,7 +28,7 @@ function Hero() {
           </p>
 
           <form onSubmit={submitHandler}>
-            <div className='input-group w-75 mb-3'>
+            <div className='input-group w-100 mb-3'>
               <div className='icon-loc'>
                 <FaMapMarkerAlt></FaMapMarkerAlt>
               </div>
@@ -37,7 +37,7 @@ function Hero() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 className='text-secondary form-control'
-                placeholder='Search for the recipe you want!'
+                placeholder='Search recipe you want!'
                 aria-label='Search for the recipe you want!'
                 aria-describedby='basic-addon2'
               ></input>
@@ -50,7 +50,7 @@ function Hero() {
           </form>
         </div>
 
-        <div className='col-md-6 img-hero'>
+        <div className='col-md-7 img-hero'>
           <img src='/hero-img.jpg' className='img-fluid' alt='Hero-Imagefood'></img>
         </div>
       </div>

@@ -5,8 +5,8 @@ import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 const Footer = () => {
   return (
     <div className='footer container mt-5 w-100'>
-      <div className='row w-100 justify-content-center'>
-        <div className='col-6'>
+      <div className='footer-resp row w-100 justify-content-center'>
+        <div className='footer-text col-6'>
           <h3>Foodiefy</h3>
           <p className='text-secondary'>
             Everything you need about finding <br />

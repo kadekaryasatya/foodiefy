@@ -38,15 +38,10 @@ function FeaturedRecipe() {
           <div className='col-lg-4 col-sm-12 col-md-12'>
             <h3 className='featured-title'>Featured Recipe</h3>
           </div>
-          <div className='col-lg-4 col-sm-12 col-md-12'>
-            <Button className='btn-featured mx-2 active-btn'>Rice</Button>
-            <Button className='btn-featured mx-2'>Rice</Button>
-            <Button className='btn-featured mx-2'>Rice</Button>
-            <Button className='btn-featured mx-2'>Rice</Button>
-          </div>
+
           <div className='col-lg-4 col-sm-12 col-md-12'></div>
         </div>
-        <Swiper spaceBetween={25} slidesPerView={4} navigation={true} modules={[Navigation]} onSlideChange={() => console.log('slide change')} onSwiper={(swiper) => console.log(swiper)}>
+        <Swiper spaceBetween={40} slidesPerView={matches ? '2' : '4'} navigation={true} modules={[Navigation]}>
           {popular.map((recipe) => {
             return (
               <SwiperSlide key={recipe.id}>

@@ -49,6 +49,7 @@
 }
 
 .make-recipe-section button {
+  margin-top: 15px;
   align-items: center;
   font-weight: 600;
   font-size: 14px;
@@ -61,4 +62,20 @@
 
 .make-recipe-section button:hover {
   background: #102fb9;
+}
+
+@media screen and (max-width: 767px) {
+  .resp {
+    flex-direction: column;
+  }
+
+  .mkrecipe-body {
+    min-width: 400px;
+  }
+
+  .make-recipe-section .img-fluid {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
 }

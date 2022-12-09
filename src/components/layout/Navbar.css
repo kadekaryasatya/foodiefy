@@ -32,11 +32,10 @@
 }
 
 .navbar .navbar-nav .nav-item.link-sign {
-  background: #ffffff;
-  margin-left: 1.5rem;
+  background: #10b981;
 }
 
 .navbar .navbar-nav .nav-item.link-sign .nav-link {
-  color: #1b1c57 !important;
+  color: #f8f8f8 !important;
   margin: 0 0.5rem;
 }
