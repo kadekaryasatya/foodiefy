@@ -64,18 +64,3 @@
   background: #102fb9;
 }
 
-@media screen and (max-width: 767px) {
-  .resp {
-    flex-direction: column;
-  }
-
-  .mkrecipe-body {
-    min-width: 400px;
-  }
-
-  .make-recipe-section .img-fluid {
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-}
