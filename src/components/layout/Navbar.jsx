@@ -4,7 +4,7 @@ import './Navbar.css';
 import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = ({ logout, name }) => {
-  let key = localStorage.getItem('accessToken');
+  const key = localStorage.getItem('accessToken');
 
   return (
     <nav className='navbar navbar-expand-lg'>
