@@ -1,20 +1,21 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { HiArrowLeft } from 'react-icons/hi';
-import { getNotes, getActiveNotes, deleteNote } from '../utils/api';
+import { getNotes, getActiveNotes, deleteNote, archiveNote, getArchivedNotes } from '../utils/api';
 import { showFormattedDate } from '../utils/api';
 import NotFound from './NotFound';
 import Popular from '../components/recipes/Popular';
 import DeleteButton from '../components/myRecipes/DeleteButton';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../components/layout/Footer';
+import { IoMdArchive } from 'react-icons/io';
 
 // import LocaleContext from '../contexts/LocaleContext';
 // import { ClimbingBoxLoader } from 'react-spinners';
 
 import './MyRecipesDetail.css';
 
-function MyRecipesDetail() {
+function MyRecipesDetail({ archived }) {
   const [recipe, setRecipe] = useState([]);
   const { id } = useParams();
   const navigate = useNavigate();
@@ -30,7 +31,6 @@ function MyRecipesDetail() {
   async function onDeleteHandler(id) {
     await deleteNote(id);
     navigate('/myrecipes');
-    // update the note state from api.js
     const { data } = await getActiveNotes();
     setRecipe(data);
   }
@@ -47,9 +47,6 @@ function MyRecipesDetail() {
   }
   return (
     <section>
-      {/* <Link to='/' title='Back'>
-        <HiArrowLeft /> {locale === 'id' ? 'Kembali' : 'Back'}
-      </Link> */}
       <div className='myrecipes-detail'>
         <div className='myrecipes-detail__content'>
           <div className='myrecipes-detail__image-box'>

@@ -8,9 +8,18 @@ import Vegetarian from '../recipes/Vegetarian';
 
 import './Cuisine.css';
 import Footer from '../layout/Footer';
+import { PacmanLoader } from 'react-spinners';
 
 function Cuisine() {
   const params = useParams();
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
 
   const [cuisine, setCuisine] = useState([]);
   useEffect(() => {
@@ -37,20 +46,27 @@ function Cuisine() {
       <Category></Category>
       <div className='cuisines'>
         <h3 className='cuisines__label'>Your Picks</h3>
-        <div className='cuisines-list'>
-          {cuisine.map((item) => {
-            return (
-              <article className='cuisines-item' key={item.id}>
-                <div className='cuisines-item__title'>
-                  <Link to={'/recipe/' + item.id}>
-                    <img className='cuisines-item__thumbnail' src={item.image} alt={item.title} />
-                    <p>{item.title}</p>
-                  </Link>
-                </div>
-              </article>
-            );
-          })}
-        </div>
+
+        {loading ? (
+          <div className='loading'>
+            <PacmanLoader color={'#10b981'} loading={loading} />
+          </div>
+        ) : (
+          <div className='cuisines-list'>
+            {cuisine.map((item) => {
+              return (
+                <article className='cuisines-item' key={item.id}>
+                  <div className='cuisines-item__title'>
+                    <Link to={'/recipe/' + item.id}>
+                      <img className='cuisines-item__thumbnail' src={item.image} alt={item.title} />
+                      <p>{item.title}</p>
+                    </Link>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        )}
       </div>
       <Popular></Popular>
       <Vegetarian></Vegetarian>

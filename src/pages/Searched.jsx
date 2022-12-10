@@ -4,6 +4,7 @@ import Search from '../components/explore/Search';
 import Footer from '../components/layout/Footer';
 import Popular from '../components/recipes/Popular';
 
+import { PacmanLoader } from 'react-spinners';
 import './Searched.css';
 
 function Searched() {
@@ -12,6 +13,14 @@ function Searched() {
   useEffect(() => {
     getSearched(params.search);
   }, [params.search]);
+
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
 
   const getSearched = async (names) => {
     const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=39b73cc197374a43b03259265314bf57&number=4&query=${names}`);
@@ -22,24 +31,33 @@ function Searched() {
   return (
     <section>
       <Search></Search>
-      <div className='searched'>
-        <h3 className='searched__label'>Searched Recipes</h3>
-        <div className='searched-list'>
-          {searched.map((item) => {
-            return (
-              <article className='searched-item' key={item.id}>
-                <div className='searched-item__title'>
-                  <Link to={'/recipe/' + item.id}>
-                    <img className='searched-item__thumbnail' src={item.image} alt={item.title} />
-                    <p>{item.title}</p>
-                  </Link>
-                </div>
-              </article>
-            );
-          })}
+      {loading ? (
+        <div className='loading'>
+          <PacmanLoader color={'#10b981'} loading={loading} />
         </div>
-      </div>
-      <Popular> </Popular>
+      ) : (
+        <div>
+          <div className='searched'>
+            <h3 className='searched__label'>Searched Recipes</h3>
+            <div className='searched-list'>
+              {searched.map((item) => {
+                return (
+                  <article className='searched-item' key={item.id}>
+                    <div className='searched-item__title'>
+                      <Link to={'/recipe/' + item.id}>
+                        <img className='searched-item__thumbnail' src={item.image} alt={item.title} />
+                        <p>{item.title}</p>
+                      </Link>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+          <Popular> </Popular>
+        </div>
+      )}
+
       <Footer></Footer>
     </section>
   );
