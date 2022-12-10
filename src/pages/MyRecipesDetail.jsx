@@ -1,26 +1,23 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { HiArrowLeft } from 'react-icons/hi';
-import { getNotes, getActiveNotes, deleteNote, archiveNote, getArchivedNotes } from '../utils/api';
+import { getNotes, getActiveNotes, deleteNote } from '../utils/api';
 import { showFormattedDate } from '../utils/api';
 import NotFound from './NotFound';
 import Popular from '../components/recipes/Popular';
 import DeleteButton from '../components/myRecipes/DeleteButton';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../components/layout/Footer';
-import { IoMdArchive } from 'react-icons/io';
 
-// import LocaleContext from '../contexts/LocaleContext';
-// import { ClimbingBoxLoader } from 'react-spinners';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
 import './MyRecipesDetail.css';
 
-function MyRecipesDetail({ archived }) {
+function MyRecipesDetail() {
   const [recipe, setRecipe] = useState([]);
   const { id } = useParams();
   const navigate = useNavigate();
-  // const { locale } = useContext(LocaleContext);
-  // const [loading, setLoading] = useState(false);
+  const MySwal = withReactContent(Swal);
 
   useEffect(() => {
     getNotes(id).then(({ data }) => {
@@ -29,18 +26,24 @@ function MyRecipesDetail({ archived }) {
   }, [id]);
 
   async function onDeleteHandler(id) {
-    await deleteNote(id);
-    navigate('/myrecipes');
-    const { data } = await getActiveNotes();
-    setRecipe(data);
+    MySwal.fire({
+      title: 'Are you sure?',
+      text: 'You want delete this recipe?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        deleteNote(id);
+        navigate('/myrecipes');
+        const { data } = getActiveNotes();
+        setRecipe(data);
+        Swal.fire('Deleted!', 'Your Recipe has been deleted.', 'success');
+      }
+    });
   }
-
-  // useEffect(() => {
-  //   setLoading(true);
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 2000);
-  // }, []);
 
   if (!recipe) {
     return <NotFound />;

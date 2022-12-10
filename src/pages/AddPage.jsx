@@ -4,12 +4,16 @@ import { useNavigate } from 'react-router-dom';
 import useInput from '../hooks/useInput';
 import './AddPage.css';
 
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+
 function AddPage() {
   const [title, onTitleChange] = useInput('');
   const [body, onBodyChange] = useInput('');
   const limit = 50;
 
   const navigate = useNavigate();
+  const MySwal = withReactContent(Swal);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,6 +24,11 @@ function AddPage() {
     addNote({ title, body }).then((res) => {
       if (!res.error) {
         navigate('/myrecipes');
+        MySwal.fire({
+          title: <strong>Success</strong>,
+          html: <i>Your recipe has been submited successfuly</i>,
+          icon: 'success',
+        });
       }
     });
   };

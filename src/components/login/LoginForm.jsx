@@ -2,14 +2,24 @@ import React from 'react';
 import useInput from '../../hooks/useInput';
 import { login } from '../../utils/api';
 
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+
 function LoginForm({ loginSuccess }) {
   const [email, onEmailChange] = useInput('');
   const [password, onPasswordChange] = useInput('');
+
+  const MySwal = withReactContent(Swal);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const res = await login({ email, password });
     if (!res.error) {
+      MySwal.fire({
+        title: <strong>Success</strong>,
+        html: <i>Login successfuly</i>,
+        icon: 'success',
+      });
       loginSuccess(res.data);
     }
   };

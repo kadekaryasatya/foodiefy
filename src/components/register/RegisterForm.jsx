@@ -3,6 +3,9 @@ import { register } from '../../utils/api';
 import { Link, useNavigate } from 'react-router-dom';
 import useInput from '../../hooks/useInput';
 
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+
 function RegisterForm() {
   const [name, onNameChange] = useInput('');
   const [email, onEmailChange] = useInput('');
@@ -10,6 +13,7 @@ function RegisterForm() {
   const [confirmPassword, onConfirmPasswordChange] = useInput('');
 
   const navigate = useNavigate();
+  const MySwal = withReactContent(Swal);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,7 +21,11 @@ function RegisterForm() {
      * Validation Confirm Password
      */
     if (password !== confirmPassword) {
-      alert('The password confirmation does not match');
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'The password confirmation does not match',
+      });
       navigate('/register');
     } else {
       /**
@@ -25,8 +33,12 @@ function RegisterForm() {
        */
       register({ name, email, password }).then((res) => {
         if (!res.error) {
-          alert('Registration succesfuly');
-          navigate('/login');
+          MySwal.fire({
+            title: <strong>Success</strong>,
+            html: <i>Registration successfuly , Please Login</i>,
+            icon: 'success',
+          });
+          navigate('/*');
         }
       });
     }

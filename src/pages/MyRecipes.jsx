@@ -7,6 +7,8 @@ import SearchBar from '../components/myRecipes/SearchBar';
 
 import { PacmanLoader } from 'react-spinners';
 import './MyRecipes.css';
+import Footer from '../components/layout/Footer';
+import Popular from '../components/recipes/Popular';
 
 function MyRecipes() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -51,19 +53,23 @@ function MyRecipes() {
           </Link>
         </div>
       </div>
-      {loading ? (
-        <div className='loading'>
-          <PacmanLoader color={'#10b981'} loading={loading} />
+
+      <div className='active-recipes'>
+        <div className='active-recipes__title'>
+          <h3>My recipes</h3>
+          <SearchBar keyword={keyword} keywordChange={onKeywordChangeHandler} />
         </div>
-      ) : (
-        <div className='active-recipes'>
-          <div className='active-recipes__title'>
-            <h3>My recipes</h3>
-            <SearchBar keyword={keyword} keywordChange={onKeywordChangeHandler} />
+        {loading ? (
+          <div className='loading'>
+            <PacmanLoader color={'#10b981'} loading={loading} />
           </div>
-          {notes.length !== 0 ? <RecipeList notes={filteredRecipes} /> : <h5 className=''>No Recipes Here....</h5>}
-        </div>
-      )}
+        ) : (
+          <div>{notes.length !== 0 ? <RecipeList notes={filteredRecipes} /> : <h5 className=''>No Recipes Here....</h5>}</div>
+        )}
+      </div>
+
+      <Popular />
+      <Footer />
     </section>
   );
 }
