@@ -25,13 +25,13 @@ const Footer = () => {
             <div className='col-4'>
               <h4>Recipe</h4>
               <ul>
-                <Link to='/explore'>
+                <Link className="text-decoration-none" to='/explore'>
                   <li>Popular</li>
                 </Link>
-                <Link to='/explore'>
+                <Link className="text-decoration-none" to='/explore'>
                   <li>Vegetarian</li>
                 </Link>
-                <Link to='/explore'>
+                <Link className="text-decoration-none" to='/explore'>
                   <li>Random</li>
                 </Link>
               </ul>
@@ -39,13 +39,13 @@ const Footer = () => {
             <div className='col-4'>
               <h4>Menu</h4>
               <ul>
-                <Link to='/'>
+                <Link className="text-decoration-none" to='/'>
                   <li>Home</li>
                 </Link>
-                <Link to='/myrecipes'>
+                <Link className="text-decoration-none" to='/myrecipes'>
                   <li>MyRecipes</li>
                 </Link>
-                <Link to='/about'>
+                <Link className="text-decoration-none" to='/about'>
                   <li>About Us</li>
                 </Link>
               </ul>

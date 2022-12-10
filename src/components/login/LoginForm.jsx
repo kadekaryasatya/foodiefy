@@ -1,16 +1,17 @@
-import React from 'react';
-import useInput from '../../hooks/useInput';
-import { login } from '../../utils/api';
+import React from "react";
+import useInput from "../../hooks/useInput";
+import { login } from "../../utils/api";
 
-import Swal from 'sweetalert2';
-import withReactContent from 'sweetalert2-react-content';
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+import { useNavigate  } from "react-router-dom";
 
 function LoginForm({ loginSuccess }) {
-  const [email, onEmailChange] = useInput('');
-  const [password, onPasswordChange] = useInput('');
+  const [email, onEmailChange] = useInput("");
+  const [password, onPasswordChange] = useInput("");
 
   const MySwal = withReactContent(Swal);
-
+  const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
     const res = await login({ email, password });
@@ -18,20 +19,32 @@ function LoginForm({ loginSuccess }) {
       MySwal.fire({
         title: <strong>Success</strong>,
         html: <i>Login successfuly</i>,
-        icon: 'success',
+        icon: "success",
       });
       loginSuccess(res.data);
+      navigate('/');
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className='login-form__item'>
+    <form onSubmit={handleSubmit} className="login-form__item">
       <h5>Email</h5>
-      <input type='email' placeholder='ex : foodiefy@gmail.com' value={email} onChange={onEmailChange} className='login-email' />
+      <input
+        type="email"
+        placeholder="ex : foodiefy@gmail.com"
+        value={email}
+        onChange={onEmailChange}
+        className="login-email"
+      />
       <h5>Password</h5>
-      <input type='password' placeholder='ex : foodiefy123' value={password} onChange={onPasswordChange} />
+      <input
+        type="password"
+        placeholder="ex : foodiefy123"
+        value={password}
+        onChange={onPasswordChange}
+      />
       <p></p>
-      <button className='login-btn' title='Login'>
+      <button className="login-btn" title="Login">
         Masuk
       </button>
     </form>
