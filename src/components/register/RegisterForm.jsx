@@ -1,6 +1,6 @@
 import React from 'react';
 import { register } from '../../utils/api';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import useInput from '../../hooks/useInput';
 
 import Swal from 'sweetalert2';

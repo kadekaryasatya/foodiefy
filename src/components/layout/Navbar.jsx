@@ -1,11 +1,9 @@
 import React from 'react';
 
 import './Navbar.css';
-import { NavLink, Link, useLocation } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = ({ logout, name }) => {
-  const { pathname } = useLocation();
-
   let key = localStorage.getItem('accessToken');
 
   return (
