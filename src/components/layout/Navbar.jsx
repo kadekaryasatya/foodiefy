@@ -40,7 +40,7 @@ const Navbar = ({ logout, name }) => {
               </NavLink>
             </li>
 
-            <li className='nav-item link-sign'>
+            {/* <li className='nav-item link-sign'>
               {key.length > 0 ? (
                 <a className='nav-link' onClick={logout} href='/'>
                   {name}
@@ -50,7 +50,7 @@ const Navbar = ({ logout, name }) => {
                   Login
                 </Link>
               )}
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
