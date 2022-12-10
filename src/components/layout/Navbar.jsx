@@ -41,7 +41,7 @@ const Navbar = ({ logout, name }) => {
             </li>
 
             <li className='nav-item link-sign'>
-              {auth.length > 0 ? (
+              {auth?.length > 0 ? (
                 <a className='nav-link' onClick={logout} href='/'>
                   {name}
                 </a>
