@@ -4,7 +4,7 @@ import './Navbar.css';
 import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = ({ logout, name }) => {
-  const key = localStorage.getItem('accessToken');
+  const auth = localStorage.getItem('accessToken');
 
   return (
     <nav className='navbar navbar-expand-lg'>
@@ -41,7 +41,7 @@ const Navbar = ({ logout, name }) => {
             </li>
 
             <li className='nav-item link-sign'>
-              {key.length > 0 ? (
+              {auth.length > 0 ? (
                 <a className='nav-link' onClick={logout} href='/'>
                   {name}
                 </a>
