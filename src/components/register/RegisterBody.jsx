@@ -1,6 +1,5 @@
 import React from 'react';
 import RegisterForm from './RegisterForm';
-import RegisterButton from './RegisterButton';
 import TitleRegister from './TitleRegister';
 import CreateAccount from './HaveAccount';
 
