@@ -274,3 +274,10 @@ body {
   margin-left: 105px;
   margin-top: 40px;
 }
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
