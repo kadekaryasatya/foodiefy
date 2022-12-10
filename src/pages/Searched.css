@@ -41,6 +41,10 @@
   color: var(--date-color);
 }
 
+.no-result {
+  margin-top: 2rem;
+  text-align: center;
+}
 /* 
    Responsive
 */

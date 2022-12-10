@@ -9,6 +9,7 @@ import './Searched.css';
 
 function Searched() {
   const [searched, setSearched] = useState([]);
+
   const params = useParams();
   useEffect(() => {
     getSearched(params.search);
@@ -28,36 +29,42 @@ function Searched() {
     setSearched(res.results);
     console.log(res);
   };
+
   return (
     <section>
       <Search></Search>
-      {loading ? (
-        <div className='loading'>
-          <PacmanLoader color={'#10b981'} loading={loading} />
-        </div>
-      ) : (
-        <div>
-          <div className='searched'>
-            <h3 className='searched__label'>Searched Recipes</h3>
-            <div className='searched-list'>
-              {searched.map((item) => {
-                return (
-                  <article className='searched-item' key={item.id}>
-                    <div className='searched-item__title'>
-                      <Link to={'/recipe/' + item.id}>
-                        <img className='searched-item__thumbnail' src={item.image} alt={item.title} />
-                        <p>{item.title}</p>
-                      </Link>
-                    </div>
-                  </article>
-                );
-              })}
-            </div>
-          </div>
-          <Popular> </Popular>
-        </div>
-      )}
 
+      <div className='searched'>
+        <h3 className='searched__label'>Searched Recipes </h3>
+        {loading ? (
+          <div className='loading'>
+            <PacmanLoader color={'#10b981'} loading={loading} />
+          </div>
+        ) : (
+          <div>
+            {searched.length > 0 ? (
+              <div className='searched-list'>
+                {searched.map((item) => {
+                  return (
+                    <article className='searched-item' key={item.id}>
+                      <div className='searched-item__title'>
+                        <Link to={'/recipe/' + item.id}>
+                          <img className='searched-item__thumbnail' src={item.image} alt={item.title} />
+                          <p>{item.title}</p>
+                        </Link>
+                      </div>
+                    </article>
+                  );
+                })}
+              </div>
+            ) : (
+              <h5 className='no-result'>Sorry, Recipe Not Found</h5>
+            )}
+          </div>
+        )}
+      </div>
+
+      <Popular> </Popular>
       <Footer></Footer>
     </section>
   );

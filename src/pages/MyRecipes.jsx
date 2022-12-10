@@ -64,7 +64,7 @@ function MyRecipes() {
             <PacmanLoader color={'#10b981'} loading={loading} />
           </div>
         ) : (
-          <div>{notes.length !== 0 ? <RecipeList notes={filteredRecipes} /> : <h5 className=''>No Recipes Here....</h5>}</div>
+          <div>{notes.length !== 0 ? <RecipeList notes={filteredRecipes} /> : <h5 className='no-result'>No Recipes Here....</h5>}</div>
         )}
       </div>
 
