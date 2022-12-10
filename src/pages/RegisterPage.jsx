@@ -2,6 +2,7 @@ import React from "react";
 import RegisterBody from "../components/register/RegisterBody";
 import RegisterLogo from "../components/register/RegisterLogo";
 import TitleApp from "../components/register/TitleApp";
+import "./RegisterPage.css";
 
 function RegisterPage() {
   return (

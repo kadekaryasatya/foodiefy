@@ -1,6 +1,7 @@
 import LoginBody from '../components/login/LoginBody';
 import LoginLogo from '../components/login/LoginLogo';
 import TitleApp from '../components/login/TitleApp';
+import "./LoginPage.css";
 
 function LoginPage({ loginSuccess }) {
   return (

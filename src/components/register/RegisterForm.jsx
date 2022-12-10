@@ -41,7 +41,7 @@ function RegisterForm() {
       <input type='password' value={password} onChange={onPasswordChange} required />
       <h5>Konfirmasi password</h5>
       <input type='password' value={confirmPassword} onChange={onConfirmPasswordChange} required />
-
+      <p></p>
       <button className='register-btn' title='register'>
         Register
       </button>
