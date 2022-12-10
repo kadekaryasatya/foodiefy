@@ -44,49 +44,49 @@ function About() {
           <h4>Our team</h4>
           <div className='our-team__body'>
             <div className='dek-arya'>
-              <img className='about__image' src='../detail.png' alt='recipe' />
+              <img className='about__image' src='../dek-arya.jpeg' alt='dekarya' />
               <h3>Dek Arya</h3>
               <div>
                 <a href='https://github.com/kadekaryasatya'>
                   <AiFillGithub size={30} color='black' />
                 </a>
-                <a href='https://github.com/kadekaryasatya'>
+                <a href='https://www.linkedin.com/in/dek-arya/'>
                   <AiFillLinkedin size={30} color='black' />
                 </a>
               </div>
             </div>
             <div className='zulham'>
-              <img className='about__image' src='../detail.png' alt='recipe' />
+              <img className='about__image' src='../zulham.jpeg' alt='zulham' />
               <h3>Zulham</h3>
               <div>
-                <a href='https://github.com/kadekaryasatya'>
+                <a href='https://github.com/zurizi'>
                   <AiFillGithub size={30} color='black' />
                 </a>
-                <a href='https://github.com/kadekaryasatya'>
+                <a href='https://www.linkedin.com/in/muhammad-zulham-alfarizi/'>
                   <AiFillLinkedin size={30} color='black' />
                 </a>
               </div>
             </div>
             <div className='dede-oka'>
-              <img className='about__image' src='../detail.png' alt='recipe' />
+              <img className='about__image' src='../dede-oka.jpg' alt='dedeoka' />
               <h3>Dede Oka</h3>
               <div>
-                <a href='https://github.com/kadekaryasatya'>
+                <a href='https://github.com/Dedeoka'>
                   <AiFillGithub size={30} color='black' />
                 </a>
-                <a href='https://github.com/kadekaryasatya'>
+                <a href='https://www.linkedin.com/in/i-gede-oka-pradnyana-putra-994440253/'>
                   <AiFillLinkedin size={30} color='black' />
                 </a>
               </div>
             </div>
             <div className='tri'>
-              <img className='about__image' src='../detail.png' alt='recipe' />
+              <img className='about__image' src='../tri.jpeg' alt='tri' />
               <h3>Tri</h3>
               <div>
-                <a href='https://github.com/kadekaryasatya'>
+                <a href='https://github.com/trirahaditya'>
                   <AiFillGithub size={30} color='black' />
                 </a>
-                <a href='https://github.com/kadekaryasatya'>
+                <a href='https://www.linkedin.com/in/nyoman-tri-rahaditya-kusuma-9426b51b5/'>
                   <AiFillLinkedin size={30} color='black' />
                 </a>
               </div>
