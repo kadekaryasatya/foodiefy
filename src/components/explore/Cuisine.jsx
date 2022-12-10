@@ -35,7 +35,6 @@ function Cuisine() {
       const data = await res.json();
       localStorage.setItem(`${names}`, JSON.stringify(data.results));
       setCuisine(data.results);
-      console.log(res);
     }
   };
 
