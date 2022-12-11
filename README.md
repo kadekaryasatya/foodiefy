@@ -1,11 +1,9 @@
-# Foodiefy
 
-![foodiefy]()
 
 <br />
 <p align="center">
-  <img src="./favicon.png" alt="Logo" width="80" height="80">
-  <h3 align="center">Foodiefy</h3>
+  <img src="https://github.com/kadekaryasatya/foodiefy/blob/master/public/favicon.png" alt="Logo" width="200" height="200">
+  <h1 align="center">Foodiefy</h3>
 </p>
 
 ## About Foodiefy
