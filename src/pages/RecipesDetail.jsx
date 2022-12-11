@@ -21,7 +21,6 @@ function Detail() {
     let isMounted = true;
     getDetails().then((data) => {
       if (isMounted) setDetails(data);
-      console.log(data);
     });
     return () => {
       isMounted = false;
