@@ -1,9 +1,9 @@
-# Foodiefy
+
 
 <br />
 <p align="center">
   <img src="https://github.com/kadekaryasatya/foodiefy/blob/master/public/favicon.png" alt="Logo" width="200" height="200">
-  <h3 align="center">Foodiefy</h3>
+  <h1 align="center">Foodiefy</h3>
 </p>
 
 ## About Foodiefy
