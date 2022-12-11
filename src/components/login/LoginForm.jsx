@@ -34,7 +34,7 @@ function LoginForm({ loginSuccess }) {
       <input type='password' value={password} onChange={onPasswordChange} required />
       <p></p>
       <button className='login-btn' title='Login'>
-        Masuk
+        Login
       </button>
     </form>
   );
