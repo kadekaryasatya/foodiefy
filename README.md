@@ -23,8 +23,8 @@ Sebuah platform penyedia layanan yang dibangun untuk mengelola resep masakan pen
 - Dicoding Notes API
 
 ### Foodiefy Team : 
-- [Dek Arya](https://github.com/ToKu404)
-- [Zulham](https://github.com/Hanan07-sys)
-- [Dede Oka](https://github.com/adidharmawati)
-- [Tri](https://github.com/fildzahah)
+- [Dek Arya](https://github.com/kadekaryasatya)
+- [Zulham](https://github.com/zurizi)
+- [Dede Oka](https://github.com/Dedeoka)
+- [Tri](https://github.com/trirahaditya)
 
