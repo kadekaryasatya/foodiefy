@@ -1,30 +1,18 @@
 # Foodiefy
-![pethouse_ss]()
+![foodiefy]()
 ## About Foodiefy
 Sebuah platform penyedia layanan yang dibangun untuk mengelola resep masakan pengguna dan memberikan referensi masakan yang tersebar di seluruh dunia
 
 ### The Features: 
 -Register 
-
 -Login
-
--Home Page
-
--Explore
-
--My Recipe
-
--About Us
-
--Add Recipe
-
+-Explore Recipes
+-My Recipes
+-Add Recipes
 -Delete Recipe
-
 -Search Recipe
-
 -Detail Recipe
 
--Logout
 
 
 
