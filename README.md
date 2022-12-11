@@ -22,7 +22,7 @@ Sebuah platform penyedia layanan yang dibangun untuk mengelola resep masakan pen
 - Spoonacular API
 - Dicoding Notes API
 
-## CPSG 40 Team
+##Foodiefy Team
 - [Dek Arya](https://github.com/ToKu404)
 - [Zulham](https://github.com/Hanan07-sys)
 - [Dede Oka](https://github.com/adidharmawati)
