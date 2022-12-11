@@ -1,4 +1,4 @@
-# PETHOUSE
+# Foodiefy
 ![pethouse_ss]()
 ## About Foodiefy
 Sebuah platform penyedia layanan yang dibangun untuk mengelola resep masakan pengguna dan memberikan referensi masakan yang tersebar di seluruh dunia
