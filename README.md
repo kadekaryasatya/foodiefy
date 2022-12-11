@@ -4,14 +4,14 @@
 Sebuah platform penyedia layanan yang dibangun untuk mengelola resep masakan pengguna dan memberikan referensi masakan yang tersebar di seluruh dunia
 
 ### The Features: 
--Register 
--Login
--Explore Recipes
--My Recipes
--Add Recipes
--Delete Recipe
--Search Recipe
--Detail Recipe
+- Register 
+- Login
+- Explore Recipes
+- My Recipes
+- Add Recipes
+- Delete Recipe
+- Search Recipe
+- Detail Recipe
 
 
 
