@@ -1,10 +1,7 @@
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
-![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
-![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white)
-![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)  
+![React](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/CPSG-26/qalbu?style=for-the-badge)
 ![Repo Size](https://img.shields.io/github/repo-size/CPSG-26/qalbu?style=for-the-badge)
 ![License](https://img.shields.io/github/license/CPSG-26/qalbu?style=for-the-badge)
