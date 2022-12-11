@@ -15,7 +15,7 @@ function Search() {
     <form className='search-explore' onSubmit={submitHandler}>
       <div className='search-explore__content'>
         <FaSearch />
-        <input className='search-explore__input ' type='text' placeholder='Search your recipe here...' value={input} onChange={(e) => setInput(e.target.value)} />
+        <input className='search-explore__input ' type='text' placeholder='Search your recipe here...' value={input} onChange={(e) => setInput(e.target.value)} required />
       </div>
     </form>
   );

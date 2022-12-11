@@ -4,7 +4,7 @@ import './makeyourrecipe.css';
 
 function MakeRecipe() {
   return (
-    <div className='container make-recipe-section pt-4 mt-3 mb-5 w-100'>
+    <div className='container make-recipe-section pt-4 mt-3  w-100'>
       <span className='mkrecipe-subtitle position-relative'>our features</span>
       <div className='resp row'>
         <div className='col-lg-6 col-sm-12 col-md-12'>

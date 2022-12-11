@@ -90,15 +90,16 @@
   overflow: visible;
 }
 
-.featured-section .card-title{
-  width:100%;
+.featured-section .card-title {
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
 }
 
 @media screen and (min-width: 990px) {
   .featured-section {
-    margin-top: 22rem;
+    margin-top: 25rem;
+    margin-bottom: 10rem;
   }
 }

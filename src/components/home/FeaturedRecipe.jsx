@@ -41,7 +41,7 @@ function FeaturedRecipe() {
   }, []);
 
   return (
-    <>
+    <div className='featured-recipe__background'>
       <div className='container featured-section'>
         <span className='our-recomend position-relative'>our recomendation</span>
         <div className='row mb-3'>
@@ -78,7 +78,7 @@ function FeaturedRecipe() {
           </Swiper>
         )}
       </div>
-    </>
+    </div>
   );
 }
 export default FeaturedRecipe;

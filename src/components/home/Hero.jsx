@@ -40,6 +40,7 @@ function Hero() {
                 placeholder='Search recipe you want!'
                 aria-label='Search for the recipe you want!'
                 aria-describedby='basic-addon2'
+                required
               ></input>
               <div className='input-group-append'>
                 <button className='btn btn-outline-secondary'>

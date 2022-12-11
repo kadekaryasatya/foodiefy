@@ -1,10 +1,9 @@
-import React from "react";
-
+import React from 'react';
 
 function RegisterButton() {
   return (
-    <button className="register-btn" title="register">
-        Daftar
+    <button className='register-btn' title='register'>
+      Register
     </button>
   );
 }

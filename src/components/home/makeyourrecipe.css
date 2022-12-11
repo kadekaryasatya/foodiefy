@@ -1,9 +1,14 @@
+.make-recipe-section {
+  margin-bottom: 10rem;
+}
+
 .make-recipe-section .mkrecipe-subtitle {
   text-transform: capitalize;
   color: #f59e0b;
   font-weight: 600;
   font-size: 14px;
 }
+
 .make-recipe-section .mkrecipe-subtitle::before {
   content: '';
   width: 25px;
@@ -63,4 +68,3 @@
 .make-recipe-section button:hover {
   background: #102fb9;
 }
-

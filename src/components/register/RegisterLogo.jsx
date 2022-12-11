@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../../public/images/Logo.jpeg';
-import TaglineRegister from './TaglineRegister';
 import LabelRegister from './LabelRegister';
 
 function RegisterLogo() {
