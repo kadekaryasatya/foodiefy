@@ -31,7 +31,7 @@ function Cuisine() {
     if (cuisineLocal) {
       setCuisine(JSON.parse(cuisineLocal));
     } else {
-      const res = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=25fdc99073454df1a6207314399886ee&number=8&cuisine=${names}`);
+      const res = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=25fdc99073454df1a6207314399886ee&number=6&cuisine=${names}`);
       const data = await res.json();
       localStorage.setItem(`${names}`, JSON.stringify(data.results));
       setCuisine(data.results);
