@@ -1,31 +1,42 @@
 # PETHOUSE
-![pethouse_ss](https://github.com/ToKu404/Pethouse/blob/main/screenshoot/screenshoot.png?raw=true "pethouse_Ss")
-## What is Pethouse?
-Pethouse is the CPSG 40 team's final capstone project on the MSIB Kampus Merdeka x Dicoding Program path Multiplatform & Backend.
+![pethouse_ss]()
+## About Foodiefy
+Sebuah platform penyedia layanan yang dibangun untuk mengelola resep masakan pengguna dan memberikan referensi masakan yang tersebar di seluruh dunia
 
-Pethouse is a special application for pet lovers that can help to manage the pets of the activities they have. 
+### The Features: 
+-Register 
+Pada Menu ini user dapat melakukan registrasi untuk mendaftarkan akun yang digunakan untuk login
+-Login
+Pada Menu ini user dapat melakukan login untuk mengakses menu dan fitur lainnya pada aplikasi.
+-Home Page
+Pada Menu terdapat rekomendasi resep, user juga dapat mencari resep yang dibutuhkan dan melihat detail dari resep tersebut tanpa perlu melakukan login.
+-Explore
+Pada Menu ini user dapat mencari resep berdasarkan negara, terdapat juga resep populer dan resep untuk vegetarian.
+-My Recipe
+Pada Menu ini user diminta untuk melakukan login terlebih dahulu agar dapat mengakses fitur pada menu ini, terdapat beberapa fitur di dalam menu ini antara lain add recipe dan delete recipe.
+-About Us
+Pada Menu ini user dapat melihat informasi umum mengenai aplikasi.
+-Add Recipe
+Fitur ini digunakan untuk menambahkan resep sesuai keiinginannya. Terdapat form yang terdiri dari judul resep dan deskripsi resep yang dapat diisi oleh user.
+-Delete Recipe
+Fitur ini digunakan untuk menghapus resep yang telah dibuat dengan menekan button delete pada detail resep.
+-Search Recipe
+Fitur ini digunakan untuk mencari resep yang diinginkan user, user dapat memasukan keyword pada search bar yang terdapat di aplikasi.
+-Detail Recipe
+Fitur ini digunakan untuk melihat informasi detail mengenai resep, user dapat melakukan klik pada gambar dan judul resep.
+-Logout
+Fitur ini dapat digunakan user untuk melakukan logout.
 
-### This application offers various features such as: 
-- Daily Pet Tasks, 
-- Event planning and reminders 
-- Open adoption and adoption of pets 
-- Pet maps to see animal lovers around 
-- Store to buy feed for animals 
-- Petrivia to know info about animals 
 
-
-### Pethouse is built using flutter by applying : 
-- Clean Architecture 
-- BloC and Cubit 
-- Firebase Auth 
-- Firebase Firestore and Storage 
-- Flutter Map with API from Mapbox 
-- Local Notification 
-- Web Scrapping
+### Project Resources : 
+- React JS
+- Bootstrap
+- Spoonacular API
+- Dicoding Notes API
 
 ## CPSG 40 Team
-- [Ikhsan](https://github.com/ToKu404)
-- [Hanan](https://github.com/Hanan07-sys)
-- [Adi](https://github.com/adidharmawati)
-- [Iza](https://github.com/fildzahah)
+- [Dek Arya](https://github.com/ToKu404)
+- [Zulham](https://github.com/Hanan07-sys)
+- [Dede Oka](https://github.com/adidharmawati)
+- [Tri](https://github.com/fildzahah)
 
