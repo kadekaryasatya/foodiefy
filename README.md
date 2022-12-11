@@ -1,7 +1,5 @@
 # Foodiefy
 
-![foodiefy]()
-
 <br />
 <p align="center">
   <img src="./favicon.png" alt="Logo" width="80" height="80">
